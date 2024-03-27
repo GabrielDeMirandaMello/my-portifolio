@@ -1,0 +1,32 @@
+.container-navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.logo-navigation{
+    color: #007FFF;
+    font-size: 32px;
+}
+.lista-navigation{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.lista-navigation li {
+    cursor: pointer;
+    font-size: 20px;
+    padding: 10px 20px;
+}
+
+.lista-navigation li:hover {
+    background-color: #007FFF;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+.active {
+    background-color: #007FFF;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
