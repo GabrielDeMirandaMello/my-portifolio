@@ -8,3 +8,39 @@ body {
     color: #FFFFFF;
     margin: 30px 15%;
 }
+.container-home{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-size: larger;
+}
+.linha-azul{
+    width: 1px;
+    height: 75vh;
+    background-color: #007FFF;
+    border: 5px solid #007FFF;
+    border-radius: 20px;
+    box-shadow: 0 0 100px 5px #007FFF;
+}
+.container-conteudo{
+    display: flex;
+    padding: 5% 0 5% 5%;
+}
+.minhas-habilidades-home{
+    color: #007FFF;
+    font-weight: 900;
+    padding: 10px 0;
+}
+.lista-habilidades-home{
+    width: 100%;
+    padding: 0 -20px 0 20px;
+    margin-bottom: 20px;
+    list-style-type: #007FFF;
+}
+.texto-home{
+    width: 50%;
+    text-align: justify;
+}
+.img-home{
+    margin: -100px 0 0 150px;
+}
