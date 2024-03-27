@@ -8,6 +8,13 @@ body {
     color: #FFFFFF;
     margin: 30px 15%;
 }
+body::-webkit-scrollbar{
+    display: none;
+}
+
+body::-webkit-scrollbar-thumb{
+   display: none;
+}
 .container-home{
     display: flex;
     align-items: flex-start;

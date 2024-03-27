@@ -1,31 +1,71 @@
 import React from 'react';
 import "./aboutme.css";
 import Navigation from '../../components/Navigation/navigation'
+import { BsBrowserChrome } from "react-icons/bs";
+import Card from '../../components/Cards/card';
 
 function Aboutme() {
     return (
         <>
             <Navigation item={'sobre'} />
             <section className='container-home'>
-                <div className='linha-azul'></div>
-                <div className='container-conteudo'>
-                    <div className='texto-home'>
-                        <p>Olá! Sou <span style={{color:'#007FFF'}}>Gabriel De Miranda Mello</span>, um profissional apaixonado por Tecnologia. Estou aqui para compartilhar um pouco sobre mim e minhas habilidades.
-                            Desde jovem, sempre fui fascinado por Tecnologia. Ao longo dos anos, dediquei-me a aprimorar minhas habilidades e conhecimentos nesse campo, buscando constantemente novos desafios e oportunidades de crescimento.
-                        </p>
-                        <p className='minhas-habilidades-home'>Minhas Habilidades:</p>
-                        <ul className='lista-habilidades-home'>
-                            <li><span style={{color:'#007FFF'}}>Java:</span> Foi a primeira linguagem fortimente tipada que aprendi na faculdade e uso até hoje.</li>
-                            <li><span style={{color:'#007FFF'}}>Spring Boot:</span> Sempre trabalhei muito com java e acabei aprendendo bastante sobre e apliquei esses conhecimentos nos meus projetos criando APIs Restfull.</li>
-                            <li><span style={{color:'#007FFF'}}>PostgreSQL:</span> Aprendi a utlizar em minha primeira experiencia profissional e ainda utilizo em meus projetos.</li>
-                        </ul>
-                        <p>
-                            Estou animado para compartilhar mais sobre meu trabalho e experiências. Convido você a explorar meu portfólio, onde você encontrará uma amostra dos projetos que realizei, as habilidades que possuo. Se você estiver interessado em colaborar ou tiver alguma pergunta, não hesite em entrar em contato. Estou ansioso para conectar-me.
-                        </p>
+                <div className='linha-azul-aboutme'></div>
+                <div className='container-conteudo-aboutme'>
+                    <h1 className='title-aboutme'>{`<Mais Sobre Min/>`}</h1>
+                    <div className='title-formacao'>
+                        <h1 className='title-formacao'><BsBrowserChrome /> {`<Formação />`}</h1>
                     </div>
+                    <Card 
+                    title={'Graduação em Administração (Concluido)'}
+                    description={'Aonde pude aprender sobre varias coisas relacionadas a criação, manutenção entre outras formas de lidar com empreendimento de uma empresa.'}
+                    period={'Periodo: Janeiro de 2015 à Dezembro de 2019'}
+                    github={'false'}
+                    link={'none'}
+                    />
+                    <Card 
+                    title={'Análise e Desenvolvimento de Sistemas (Concluido)'}
+                    description={'Aonde pude aprender sobre Logica de programação, Modelo Agil(Scrum), como trabalhar em uma equipe em pró do projeto, Programação Orientada a Objeto, Desenvolvimento de Apps com Kotlin e saber mais sobre como funciona a nuvem e o Hardware de um computador.'}
+                    period={'Periodo: Janeiro de 2022 à Dezembro de 2023'}
+                    github={'false'}
+                    link={'none'}
+                    />
+                    <div className='title-formacao'>
+                        <h1 className='title-formacao'><BsBrowserChrome /> {`<Experiencia />`}</h1>
+                    </div>
+                    <Card 
+                    title={'Alpe (Desenvolvedor Back-End)'}
+                    description={'Breve descrição.'}
+                    period={'Periodo: Dezembro de 2022 à Dezembro de 2023'}
+                    github={'false'}
+                    link={'none'}
+                    />
+                    <Card 
+                    title={'Alpe (Quality Assurance)'}
+                    description={'Breve descrição.'}
+                    period={'Periodo: Agosto de 2022 à Dezembro de 2022'}
+                    github={'false'}
+                    link={'none'}
+                    />
+                    <div className='title-formacao'>
+                        <h1 className='title-formacao'><BsBrowserChrome /> {`<Interesses />`}</h1>
+                    </div>
+                    <Card 
+                    title={'Ler livros sobre Tecnologias'}
+                    description={'Breve descrição.'}
+                    period={'Normalmente 1 hr por dia'}
+                    github={'false'}
+                    link={'none'}
+                    />
+                    <Card 
+                    title={'Jogos Online'}
+                    description={'Breve descrição.'}
+                    period={'Normalmente quando amigos me chaman para jogar'}
+                    github={'false'}
+                    link={'none'}
+                    />
                 </div>
             </section>
-        
+
         </>
     )
 }

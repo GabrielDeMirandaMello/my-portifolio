@@ -1,0 +1,8 @@
+.linha-azul-project {
+    width: 1px;
+    height: 75vh;
+    background-color: #007FFF;
+    border: 5px solid #007FFF;
+    border-radius: 20px;
+    box-shadow: 0 0 100px 5px #007FFF;
+}
