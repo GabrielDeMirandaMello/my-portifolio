@@ -1,0 +1,9 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'jura', Courier, monospace;
+}
+body {
+    background-color: #000000;
+    color: #FFFFFF;
+}
