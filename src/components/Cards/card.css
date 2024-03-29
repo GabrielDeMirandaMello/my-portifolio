@@ -8,6 +8,7 @@
     justify-content: flex-start;
     align-items: flex-start;
     margin-bottom: 50px;
+    visibility: hidden;
 }
 .linha-azul-card{
     width: 1px;
@@ -25,13 +26,16 @@
     align-items: flex-start;
     flex-direction: column;
     padding-left: 20px;
+    visibility: hidden;
 }
 .title{
     margin: 20px 0;
+    visibility: hidden;
 }
 .description{
     margin: 0 0 30px 0;
     font-size: smaller;
+    visibility: hidden;
 }
 .period{
     background-color: #007FFF;
@@ -41,4 +45,5 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    visibility: hidden;
 }
