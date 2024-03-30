@@ -18,14 +18,17 @@ function Experiencia() {
                     <h1 className='title-aboutme'>{`<Experiencia />`}</h1>
                     <Card
                         title={'Alpe (Desenvolvedor Back-End)'}
-                        description={'Breve descrição.'}
+                        description={`Como desenvolvedor Back-End utilizei da minha criatividade, lógica de programação e 
+                        Programação Orientada a Objetos para a resolução de problemas complexos com algoritmos 
+                        em Java, implementei algumas soluções para gerar mais valor ao cliente da empresa, sempre 
+                        aprimorando meu conhecimento com Spring boot, Java multi-modulos, Clean Architecture.`}
                         period={'Periodo: Dezembro de 2022 à Dezembro de 2023'}
                         github={'false'}
                         link={'none'}
                     />
                     <Card
                         title={'Alpe (Quality Assurance)'}
-                        description={'Breve descrição.'}
+                        description={'Trabalhei pouco tempo porem tive uma boa percepção sobre a importancia de realizar os testes dentro de uma aplicação, trabalhei pouco com o Cypress que é uma ferramenta de autopmação de testes usada mais para Front end.'}
                         period={'Periodo: Agosto de 2022 à Dezembro de 2022'}
                         github={'false'}
                         link={'none'}

@@ -27,19 +27,19 @@ function Aboutme() {
 
                     <div className='title-formacao-aboutme'>
                         <h1 className='title-formacao-card'><FaMedal  style={{width:'70px', height:'auto'}}/> {`<Formação />`}</h1>
-                        <h3>Aqui você verá mais sobre as Ferramentas e Tecnologias que já usei !</h3>
+                        <h3>Aqui você verá mais sobre meus diplomas e cursos !</h3>
                         <button onClick={() => navigate('/formacao')}>Ir para Formação</button>
                     </div>
                     
                     <div className='title-formacao-aboutme'>
                         <h1 className='title-formacao-card'><FaUserTie  style={{width:'70px', height:'auto'}}/> {`<Experiencias />`}</h1>
-                        <h3>Aqui você verá mais sobre as Ferramentas e Tecnologias que já usei !</h3>
+                        <h3>Aqui irei falar sobre as experiencias profissionais que tive até o momento !</h3>
                         <button onClick={() => navigate('/experiencia')}>Ir para Experiencias</button>
                     </div>
                     
                     <div className='title-formacao-aboutme'>
                         <h1 className='title-formacao-card'><FaIcons style={{width:'70px', height:'auto'}}/> {`<Interesses />`}</h1>
-                        <h3>Aqui você verá mais sobre as Ferramentas e Tecnologias que já usei !</h3>
+                        <h3>Aqui irei mostrar mais sobre os meus hobbys e o que faço no tempo livre ! </h3>
                         <button onClick={() => navigate('/interesse')}>Ir para interesses</button>
                     </div>
                     

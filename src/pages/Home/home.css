@@ -45,9 +45,11 @@ body::-webkit-scrollbar-thumb{
     list-style-type: #007FFF;
 }
 .texto-home{
-    width: 50%;
-    text-align: justify;
-    margin-top: 100px;
+    width: 100%;
+    text-align: left;
+    margin-top: 50px;
+    font-size: larger;
+    font-weight: 600;
 }
 .img-home{
     margin: -100px 0 0 150px;

@@ -6,9 +6,9 @@
     align-items: center;
     justify-content: center;
 }
-.title-aboutme{
+.title-tecnologia{
     color: #007FFF;
-    margin-bottom: 100px;
+    margin-bottom: 30px;
 }
 .title-formacao{
     width: 80%;
@@ -24,9 +24,60 @@
 }
 .linha-azul-tecnologia{
     width: 1px;
-    height: 225vh;
+    height: 76vh;
     background-color: #007FFF;
     border: 5px solid #007FFF;
     border-radius: 20px;
     box-shadow: 0 0 100px 5px #007FFF;
+}
+.container-cards{
+    width: 90%;
+    height: 64vh;
+    overflow-y: hidden;
+    overflow: scroll;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #075db350;
+    border-radius: 20px;
+    padding: 30px;
+}
+.container-cards::-webkit-scrollbar{
+    display: none;
+}
+.card-tecnologia{
+    background-color: #303030;
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+    margin: 25px;
+    border-radius: 20px;
+}
+.container-icon-tecnologia{
+    padding: 50px;
+    border-radius: 10px;
+    background-color: #404040;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.icon-tecnologia{
+    width: 100px;
+    height: auto;
+    color: #007FFF;
+}
+.name-tecnologia{
+    font-size: larger;
+    font-weight: 900;
+    margin-bottom: 10px;
+    color: #007FFF;
+}
+.nivel-conhecimento-tecnologia{
+    margin-bottom: 20px;
+}
+.nivel-conhecimento-tecnologia h4{
+    margin-bottom: 5px;
+}
+.star-icon-tecnologia{
+    color: #007FFF;
 }
