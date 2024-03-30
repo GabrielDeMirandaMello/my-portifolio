@@ -1,0 +1,32 @@
+.container-conteudo-aboutme{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.title-aboutme{
+    color: #007FFF;
+    margin-bottom: 100px;
+}
+.title-formacao{
+    width: 80%;
+    color: #007FFF;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 20px;
+    visibility: hidden;
+    cursor: pointer;
+}
+.linha-azul-interesse{
+    width: 1px;
+    height: 75vh;
+    background-color: #007FFF;
+    border: 5px solid #007FFF;
+    border-radius: 20px;
+    box-shadow: 0 0 100px 5px #007FFF;
+}

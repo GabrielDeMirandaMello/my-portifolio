@@ -10,20 +10,51 @@
     color: #007FFF;
     margin-bottom: 100px;
 }
-.title-formacao{
+.title-formacao-aboutme{
+    width: 60%;
+    height: 300px;
+    color: #007FFF;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #303030;
+    padding: 20px;
+    border-radius: 20px;
+}
+.title-formacao-aboutme h3{
+    max-width: 70%;
+    color: #FFF;
+    text-align: center;
+}
+.title-formacao-aboutme button{
     width: 80%;
+    height: 50px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: large;
+    font-weight: 900;
+    background-color: #007FFF;
+    color: #FFF;
+}
+.title-formacao-card{
+    width: 80%;
+    height: fit-content;
     color: #007FFF;
     display: flex;
     justify-content: flex-start;
-    gap: 10px;
+    flex-direction: column;
+    gap: 20px;
     align-items: center;
     align-content: center;
     margin-bottom: 20px;
-    visibility: hidden;
 }
 .linha-azul-aboutme{
     width: 1px;
-    height: 225vh;
+    height: 170vh;
     background-color: #007FFF;
     border: 5px solid #007FFF;
     border-radius: 20px;
