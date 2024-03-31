@@ -27,8 +27,8 @@ function Projects() {
                     />
                     <Card 
                     title={'Cross Game (Faculdade)'}
-                    description={'Pequena descrição das tecnologias usadas.'}
-                    period={'Periodo: Janeiro de 2022 à Dezembro de 2023'}
+                    description={'Com o grupo da faculdade criamos um Matchmaking de jogos, utilizando uma api da Twitch para pegar os jogos e gerar esta interação entre os jogadores e criar vinculos atravez dos jogos. Temos o Front-End, Back-End e Aplicativo Mobile. Tecnologias e Ferramentas usadas: React.js, Java, Spring Boot, Docker, Balanceamento de carga e o Pattern Observer Para as Notificações.'}
+                    period={'Periodo: Janeiro de 2023 à Dezembro de 2023'}
                     github={'true'}
                     link={'https://github.com/orgs/Cross-Game/repositories'}
                     />
