@@ -1,9 +1,57 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "./contact.css";
 import Navigation from '../../components/Navigation/navigation'
-import { BsGoogle, BsGithub, BsLinkedin, BsWhatsapp } from "react-icons/bs";
+import { BsGithub, BsLinkedin } from "react-icons/bs";
+import emailjs from '@emailjs/browser';
+import Swal from 'sweetalert2'
 
 function Contact() {
+    const [toEmail, setToEmail] = useState('');
+    const [subject, setSubject] = useState('');
+    const [message, setMessage] = useState('');
+
+    const Toast = Swal.mixin({
+        toast: true,
+        position: "bottom-end",
+        showConfirmButton: false,
+        timer: 3000,
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.onmouseenter = Swal.stopTimer;
+            toast.onmouseleave = Swal.resumeTimer;
+        }
+    });
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        // Seus detalhes de conta do emailjs.com
+        const serviceId = 'service_xownue3';
+        const templateId = 'template_g7r0cbi';
+        const userId = 'hxMhd5xnStIDc_3xG';
+
+        // Parâmetros para enviar o email
+        const templateParams = {
+            from_name: toEmail,
+            assunto: subject,
+            message: message
+        };
+
+        // Envio do email
+        emailjs.send(serviceId, templateId, templateParams, userId)
+            .then(() => {
+                Toast.fire({
+                    icon: "success",
+                    title: "E-mail Enviado !"
+                });
+                setToEmail('');
+                setSubject('');
+                setMessage('');
+            }, (error) => {
+                console.error('Erro ao enviar o email:', error);
+            });
+    };
+
     return (
         <>
             <Navigation item={'contato'} />
@@ -16,24 +64,26 @@ function Contact() {
                     <div className='container-card-formulario'>
                         <div className='card-formulario'>
                             <div>
-                                <p style={{margin:'5px 0 30px 0'}}>Assunto:</p>
-                                <p style={{margin:'5px 0 30px 0'}}>Email:</p>
-                                <p style={{margin:'10px 0 20px 0'}}>Mensagem: </p>
+                                <p style={{ margin: '5px 0 30px 0' }}>Assunto:</p>
+                                <p style={{ margin: '5px 0 30px 0' }}>Email:</p>
+                                <p style={{ margin: '10px 0 20px 0' }}>Mensagem: </p>
                             </div>
-                            <div style={{width:'80%'}}>
-                                <input type="text"  />
-                                <input type="text" />
-                                <input className='input-mensagem' type="text" />
+                            <div style={{ width: '80%' }}>
+                                <input type="text" value={subject} onChange={(e) => setSubject(e.target.value)} />
+                                <input type="text" value={toEmail} onChange={(e) => setToEmail(e.target.value)} />
+                                <input className='input-mensagem' type="text" value={message} onChange={(e) => setMessage(e.target.value)} />
                             </div>
                         </div>
-                        <button className='btn-enviar-mensagem'>Enviar Mensagem</button>
+                        <button className='btn-enviar-mensagem' onClick={sendEmail}>Enviar Mensagem</button>
                     </div>
-                    <p style={{ marginTop: '5%' }}>ou</p>
+                    <p>ou</p>
                     <div className='container-icon'>
-                        <BsGithub className='icon-contato' />
-                        <BsLinkedin className='icon-contato' />
-                        <BsWhatsapp className='icon-contato' />
-                        <BsGoogle className='icon-contato' />
+                        <a href="https://github.com/GabrielDeMirandaMello">
+                            <BsGithub className='icon-contato' href='' />
+                        </a>
+                        <a href="https://www.linkedin.com/in/gabriel-de-miranda-mello-652346118/">
+                            <BsLinkedin className='icon-contato' />
+                        </a>
                     </div>
                 </div>
             </section>
