@@ -24,20 +24,14 @@ function Contact() {
 
     const sendEmail = (e) => {
         e.preventDefault();
-
-        // Seus detalhes de conta do emailjs.com
         const serviceId = 'service_xownue3';
         const templateId = 'template_g7r0cbi';
         const userId = 'hxMhd5xnStIDc_3xG';
-
-        // Parâmetros para enviar o email
         const templateParams = {
             from_name: toEmail,
             assunto: subject,
             message: message
         };
-
-        // Envio do email
         emailjs.send(serviceId, templateId, templateParams, userId)
             .then(() => {
                 Toast.fire({
