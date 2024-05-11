@@ -1,27 +1,31 @@
-*{
+* {
     padding: 0;
     margin: 0;
     font-family: 'jura', Courier, monospace;
 }
+
 body {
     background-color: #000000;
     color: #FFFFFF;
-    margin: 30px 15%;
+    margin: 20px 15% 0 15%;
 }
-body::-webkit-scrollbar{
+
+body::-webkit-scrollbar {
     display: none;
 }
 
-body::-webkit-scrollbar-thumb{
-   display: none;
+body::-webkit-scrollbar-thumb {
+    display: none;
 }
-.container-home{
+
+.container-home {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
     font-size: larger;
 }
-.linha-azul{
+
+.linha-azul {
     width: 1px;
     height: 75vh;
     background-color: #007FFF;
@@ -29,28 +33,56 @@ body::-webkit-scrollbar-thumb{
     border-radius: 20px;
     box-shadow: 0 0 100px 5px #007FFF;
 }
-.container-conteudo{
+
+.container-conteudo {
     display: flex;
     padding: 5% 0 5% 5%;
 }
-.minhas-habilidades-home{
+
+.minhas-habilidades-home {
     color: #007FFF;
     font-weight: 900;
     padding: 10px 0;
 }
-.lista-habilidades-home{
+
+.lista-habilidades-home {
     width: 100%;
     padding: 0 -20px 0 20px;
     margin-bottom: 20px;
     list-style-type: #007FFF;
 }
-.texto-home{
+
+.texto-home {
     width: 100%;
     text-align: left;
     margin-top: 50px;
     font-size: larger;
     font-weight: 600;
 }
-.img-home{
+
+.img-home {
     margin: -100px 0 0 150px;
+}
+
+@media screen and (min-width: 1200px) {
+    .container-conteudo {
+        height: 400px;
+        width: auto;
+    }
+    .texto-home {
+        width: 100%;
+        text-align: left;
+        margin-top: 0;
+        font-size: 0.9rem;
+        font-weight: 600;
+    }
+
+    .linha-azul {
+        width: 1px;
+        height: 60vh;
+        background-color: #007FFF;
+        border: 5px solid #007FFF;
+        border-radius: 20px;
+        box-shadow: 0 0 100px 5px #007FFF;
+    }
 }

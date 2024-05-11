@@ -18,7 +18,7 @@ function Aboutme() {
             <section className='container-home'>
                 <div className='linha-azul-aboutme'></div>
                 <div className='container-conteudo-aboutme'>
-                    <h1 className='title-aboutme'>{`<Mais Sobre Min/>`}</h1>
+                    <h1 className='title-aboutme-contato'>{`<Mais Sobre Min/>`}</h1>
                     <div className='title-formacao-aboutme'>
                         <h1 className='title-formacao-card'><BsFillMotherboardFill style={{width:'70px', height:'auto'}}/> {`<Tecnologias e Ferramentas />`}</h1>
                         <h3>Aqui você verá mais sobre as Ferramentas e Tecnologias que já usei !</h3>

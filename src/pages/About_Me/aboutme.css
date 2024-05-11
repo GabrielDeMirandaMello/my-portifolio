@@ -1,4 +1,4 @@
-.container-conteudo-aboutme{
+.container-conteudo-aboutme {
     width: 100%;
     height: fit-content;
     display: flex;
@@ -6,13 +6,15 @@
     align-items: center;
     justify-content: center;
 }
-.title-aboutme{
+
+.title-aboutme-contato {
     color: #007FFF;
     margin-bottom: 100px;
 }
-.title-formacao-aboutme{
+
+.title-formacao-aboutme {
     width: 60%;
-    height: 300px;
+    height: 200px;
     color: #007FFF;
     display: flex;
     justify-content: space-around;
@@ -23,12 +25,14 @@
     padding: 20px;
     border-radius: 20px;
 }
-.title-formacao-aboutme h3{
+
+.title-formacao-aboutme h3 {
     max-width: 70%;
     color: #FFF;
     text-align: center;
 }
-.title-formacao-aboutme button{
+
+.title-formacao-aboutme button {
     width: 80%;
     height: 50px;
     border-radius: 10px;
@@ -40,7 +44,8 @@
     background-color: #007FFF;
     color: #FFF;
 }
-.title-formacao-card{
+
+.title-formacao-card {
     width: 80%;
     height: fit-content;
     color: #007FFF;
@@ -52,11 +57,35 @@
     align-content: center;
     margin-bottom: 20px;
 }
-.linha-azul-aboutme{
+
+.linha-azul-aboutme {
     width: 1px;
     height: 170vh;
     background-color: #007FFF;
     border: 5px solid #007FFF;
     border-radius: 20px;
     box-shadow: 0 0 100px 5px #007FFF;
+}
+
+@media screen and (min-width: 1200px) {
+    .title-formacao-aboutme {
+        width: 60%;
+        height: 200px;
+        color: #007FFF;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+        background-color: #303030;
+        padding: 30px;
+        border-radius: 20px;
+        font-size: 0.9rem;
+    }
+
+    .title-aboutme-contato {
+        color: #007FFF;
+        margin-bottom: 20px;
+        font-size: 1.6rem;
+    }
 }
