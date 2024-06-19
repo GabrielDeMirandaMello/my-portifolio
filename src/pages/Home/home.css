@@ -77,13 +77,18 @@
   
     .container-conteudo {
       flex-direction: column;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 20px 0 20px;
     }
   
     .img-home {
       margin: 20px auto;
     }
     .texto-home {
-      font-size: 0.8em;
+      width: 75%;
+      font-size: 0.8rem;
     }
   }
   
