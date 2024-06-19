@@ -1,17 +1,21 @@
-import React from 'react';
-import "./navigation.css";
+import React, { useState } from 'react';
+import styles from "./navigation.css";
 import { useNavigate } from 'react-router-dom';
 
 function Navigation(props) {
     const navigate = useNavigate()
+    const [isOpen, setIsOpen] = useState(false);
 
-    
+    const toggleMenu = () => {
+        setIsOpen(!isOpen);
+    };
+
     return (
         <>
-
             <nav className='container-navigation'>
+
                 <h1 className='logo-navigation' onClick={() => navigate('/')}>{`<Gabriel Mello/>`}</h1>
-                <ul className='lista-navigation'>
+                <ul className={`lista-navigation ${isOpen ? 'active' : ''}`}>
                     <li className={props.item === 'pagina inicial' ? 'active' : ''} onClick={() => navigate('/')}>
                         Pagina Inicial
                     </li>
@@ -25,6 +29,11 @@ function Navigation(props) {
                         Contato
                     </li>
                 </ul>
+                <div class="menu-hamburguer" id="menu-hamburguer" onClick={toggleMenu}>
+                    <div class="linha"></div>
+                    <div class="linha"></div>
+                    <div class="linha"></div>
+                </div>
             </nav>
 
         </>

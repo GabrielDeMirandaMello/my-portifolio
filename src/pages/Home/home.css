@@ -82,6 +82,9 @@
     .img-home {
       margin: 20px auto;
     }
+    .texto-home {
+      font-size: 0.8em;
+    }
   }
   
   /* Desktop and Notebook Styles */
