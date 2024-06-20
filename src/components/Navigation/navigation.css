@@ -4,6 +4,8 @@
     align-items: center;
     width: 100%;
     margin-bottom: 100px;
+    position: relative; /* Adicione esta linha */
+  z-index: 1000;
 }
 .logo-navigation{
     color: #007FFF;
@@ -57,7 +59,8 @@
         flex-direction: column;
         width: 100%;
         background-color: #333;
-        transition: left 0.3s ease;
+        transition: left 0.3s ease-in-out;
+        z-index: 2000;
     }
 
     .active {

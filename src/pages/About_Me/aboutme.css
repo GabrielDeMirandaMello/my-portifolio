@@ -5,6 +5,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    z-index: 1000;
 }
 
 .title-aboutme-contato {
@@ -39,7 +40,6 @@
     outline: none;
     border: none;
     cursor: pointer;
-    font-size: large;
     font-weight: 900;
     background-color: #007FFF;
     color: #FFF;
@@ -67,9 +67,17 @@
     box-shadow: 0 0 100px 5px #007FFF;
 }
 
-@media screen and (min-width: 1200px) {
+.icon-aboutme{
+    width: 70px;
+    height: auto;
+}
+@media screen and (max-width: 768px) {
+    .icon-aboutme{
+        width: 40px;
+        height: auto;
+    }
     .title-formacao-aboutme {
-        width: 60%;
+        width: 100%;
         height: 200px;
         color: #007FFF;
         display: flex;
@@ -80,12 +88,26 @@
         background-color: #303030;
         padding: 30px;
         border-radius: 20px;
-        font-size: 0.9rem;
+        font-size: 0.7rem;
     }
 
     .title-aboutme-contato {
         color: #007FFF;
         margin-bottom: 20px;
-        font-size: 1.6rem;
+    }
+    .linha-azul-aboutme{
+        display: none;
+    }
+    .title-formacao-aboutme button {
+        width: 80%;
+        height: 30px;
+        border-radius: 10px;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        font-weight: 900;
+        background-color: #007FFF;
+        color: #FFF;
+        font-size: 0.8rem;
     }
 }
