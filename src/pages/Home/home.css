@@ -90,7 +90,8 @@
     }
     .texto-home {
       width: 75%;
-      font-size: 0.8rem;
+      font-size: 0.9rem;
+      margin-top: 0;
     }
   }
   
