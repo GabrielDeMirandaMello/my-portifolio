@@ -62,7 +62,7 @@ function Contact() {
                                 <p style={{ margin: '5px 0 30px 0' }}>Email:</p>
                                 <p style={{ margin: '10px 0 20px 0' }}>Mensagem: </p>
                             </div>
-                            <div style={{ width: '80%' }}>
+                            <div className='inputs-forms'>
                                 <input type="text" value={subject} onChange={(e) => setSubject(e.target.value)} />
                                 <input type="text" value={toEmail} onChange={(e) => setToEmail(e.target.value)} />
                                 <input className='input-mensagem' type="text" value={message} onChange={(e) => setMessage(e.target.value)} />

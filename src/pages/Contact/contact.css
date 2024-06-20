@@ -69,8 +69,10 @@ input{
     height: 40px;
     cursor: pointer;
 }
-
-/* @media screen and (min-width: 1200px) {
+.inputs-forms{
+    width: '80%';
+}
+@media (max-width: 768px) {
     .container-conteudo-contato {
         width: 100%;
         height: fit-content;
@@ -81,7 +83,9 @@ input{
         padding: 1%;
         font-size: 1rem;
     }
-    
+    .inputs-forms{
+        width: '10%';
+    }
     .container-conteudo-contato p{
         padding-top: 2%;
     }
@@ -116,4 +120,15 @@ input{
         width: 100%;
         margin-top: 2%;
     }
-} */
+    input{
+        border-radius: 5px;
+        border: 1px solid #007FFF;
+        height: 10px;
+        margin: 10px;
+        width: 90%;
+        outline: none;
+        padding: 5px 5px;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+}
