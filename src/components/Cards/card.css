@@ -47,3 +47,17 @@
     align-items: center;
     visibility: hidden;
 }
+
+@media (max-width: 768px) {
+    .title{
+        margin: 20px 0;
+        visibility: hidden;
+        font-size: 0.8rem;
+    }
+    .description{
+        font-size: 0.6rem;
+    }
+    .period{
+        font-size: 0.5rem;
+    }
+}

@@ -6,3 +6,9 @@
     border-radius: 20px;
     box-shadow: 0 0 100px 5px #007FFF;
 }
+
+@media (max-width: 768px) {
+    .linha-azul-project{
+        display: none;
+    }
+}
