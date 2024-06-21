@@ -1,102 +1,124 @@
 * {
-    padding: 0;
-    margin: 0;
-    font-family: 'jura', Courier, monospace;
-  }
-  
-  body {
-    background-color: #000000;
-    color: #FFFFFF;
-    margin: 20px 15% 0 15%;
-  }
-  
-  body::-webkit-scrollbar {
-    display: none;
-  }
-  
-  body::-webkit-scrollbar-thumb {
-    display: none;
-  }
-  
+  padding: 0;
+  margin: 0;
+  font-family: 'jura', Courier, monospace;
+}
+
+body {
+  color: #FFFFFF;
+  margin: 20px 15% 0 15%;
+  background-image: url('../../assets/12979917_5084836.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: auto;
+  height: 100vh;
+}
+
+body::-webkit-scrollbar,
+.container-home::-webkit-scrollbar,
+.container-conteudo::-webkit-scrollbar {
+  display: none;
+}
+
+body::-webkit-scrollbar-thumb,
+.container-home::-webkit-scrollbar,
+.container-conteudo::-webkit-scrollbar {
+  display: none;
+}
+
+.container-home {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-size: larger;
+  border: 1px solid #007FFF;
+  border-radius: 20px;
+  padding: 5%;
+  height: 60vh;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.21);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.linha-azul {
+  width: 1px;
+  height: 60vh;
+  background-color: #007FFF;
+  border: 5px solid #007FFF;
+  border-radius: 20px;
+  box-shadow: 0 0 100px 5px #007FFF;
+}
+
+.container-conteudo {
+  display: flex;
+  height: 50vh;
+  padding: 5% 0 5% 5%;
+  overflow-x: hidden;
+  overflow-x: scroll;
+}
+
+.minhas-habilidades-home {
+  color: #007FFF;
+  font-weight: 900;
+  padding: 10px 0;
+}
+
+.lista-habilidades-home {
+  width: 100%;
+  padding: 0 -20px 0 20px;
+  margin-bottom: 20px;
+  list-style-type: #007FFF;
+}
+
+.texto-home {
+  width: 100%;
+  text-align: left;
+  font-size: medium;
+  font-weight: 600;
+}
+
+
+/* Mobile Styles */
+@media only screen and (max-width: 768px) {
   .container-home {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    font-size: larger;
-    position: relative;
-    z-index: 0;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
   }
-  
+
   .linha-azul {
-    width: 1px;
-    height: 75vh;
-    background-color: #007FFF;
-    border: 5px solid #007FFF;
-    border-radius: 20px;
-    box-shadow: 0 0 100px 5px #007FFF;
+    display: none;
   }
-  
+
   .container-conteudo {
     display: flex;
-    padding: 5% 0 5% 5%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-x: scroll;
   }
-  
-  .minhas-habilidades-home {
-    color: #007FFF;
-    font-weight: 900;
-    padding: 10px 0;
-  }
-  
-  .lista-habilidades-home {
-    width: 100%;
-    padding: 0 -20px 0 20px;
-    margin-bottom: 20px;
-    list-style-type: #007FFF;
-  }
-  
+
   .texto-home {
-    width: 100%;
-    text-align: left;
-    margin-top: 50px;
-    font-size: larger;
-    font-weight: 600;
+    width: 75%;
+    font-size: 0.8rem;
   }
-  
-  .img-home {
-    margin: -100px 0 0 150px;
+}
+
+/* Desktop and Notebook Styles */
+@media only screen and (min-width: 768px) {
+  .texto-home {
+    font-size: medium;
   }
-  
-  /* Mobile Styles */
-  @media only screen and (max-width: 768px) {
-    .container-home {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .linha-azul {
-      display: none;
-    }
-  
-    .container-conteudo {
-      flex-direction: column;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 0 20px 0 20px;
-    }
-  
-    .img-home {
-      margin: 20px auto;
-    }
-    .texto-home {
-      width: 75%;
-      font-size: 0.8rem;
-    }
+
+  .container-conteudo {
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-x: scroll;
   }
-  
-  /* Desktop and Notebook Styles */
-  @media only screen and (min-width: 768px) {
-    .texto-home {
-      font-size: 1.2em;
-    }
-  }
+}

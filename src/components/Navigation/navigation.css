@@ -4,8 +4,8 @@
     align-items: center;
     width: 100%;
     margin-bottom: 100px;
-    position: relative; /* Adicione esta linha */
-  z-index: 1000;
+    position: relative;
+    z-index: 1000;
 }
 .logo-navigation{
     color: #007FFF;

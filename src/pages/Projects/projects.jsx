@@ -8,7 +8,7 @@ function Projects() {
         <>
             <Navigation item={'projetos'} />
             <section className='container-home'>
-                <div className='linha-azul-project'></div>
+                <div className='linha-azul'></div>
                 <div className='container-conteudo-aboutme'>
                     <h1 className='title-aboutme'>{`<Meus Projetos />`}</h1>
                     <Card 

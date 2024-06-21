@@ -1,11 +1,12 @@
 .container-conteudo-aboutme {
     width: 100%;
-    height: fit-content;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    z-index: 1000;
+    overflow: hidden;
+    overflow-y: scroll;
 }
 
 .title-aboutme-contato {
@@ -60,7 +61,7 @@
 
 .linha-azul-aboutme {
     width: 1px;
-    height: 170vh;
+    height: 50vh;
     background-color: #007FFF;
     border: 5px solid #007FFF;
     border-radius: 20px;

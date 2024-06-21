@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import "./home.css";
 import Navigation from '../../components/Navigation/navigation'
-import FotoProfiddional from '../../assets/foto_formal_sem_fundo 1.png'
 import ScrollReveal from 'scrollreveal';
 
 function Home() {
@@ -72,7 +71,6 @@ function Home() {
                         Estou animado para compartilhar mais sobre meu trabalho e experiências. Convido você a explorar meu portfólio, onde você encontrará uma amostra dos projetos que realizei, as habilidades que possuo. Se você estiver interessado em colaborar ou tiver alguma pergunta, não hesite em entrar em contato. Estou ansioso para conectar-me.
                         </p>
                     </div>
-                    <img className='img-home' src={FotoProfiddional} alt="" />
                 </div>
             </section>
 

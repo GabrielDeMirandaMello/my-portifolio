@@ -8,15 +8,12 @@ import { useNavigate } from 'react-router-dom';
 
 function Aboutme() {
     const navigate = useNavigate()
-    useEffect(() => {
-        ScrollReveal({ reset: true}).reveal('.title-formacao-aboutme', { duration: 1000, distance: '150%', origin: 'left', opacity: 0   });
-    })
 
     return (
         <>
             <Navigation item={'sobre'} />
             <section className='container-home'>
-                <div className='linha-azul-aboutme'></div>
+                <div className='linha-azul'></div>
                 <div className='container-conteudo-aboutme'>
                     <h1 className='title-aboutme-contato'>{`<Mais Sobre Min/>`}</h1>
                     <div className='title-formacao-aboutme'>
