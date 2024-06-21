@@ -73,3 +73,11 @@
 .star-icon-tecnologia{
     color: #007FFF;
 }
+
+@media screen and (max-width: 768px){
+
+    .linha-azul-tecnologia{
+        display: none;
+    }
+
+}
