@@ -115,41 +115,10 @@ body::-webkit-scrollbar-thumb,
   .texto-home {
     font-size: medium;
   }
-<<<<<<< HEAD
 
   .container-conteudo {
     flex-direction: column;
     overflow-x: hidden;
     overflow-x: scroll;
-=======
-  
-  /* Mobile Styles */
-  @media only screen and (max-width: 768px) {
-    .container-home {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .linha-azul {
-      display: none;
-    }
-  
-    .container-conteudo {
-      flex-direction: column;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 0 20px 0 20px;
-    }
-  
-    .img-home {
-      margin: 20px auto;
-    }
-    .texto-home {
-      width: 75%;
-      font-size: 0.9rem;
-      margin-top: 0;
-    }
->>>>>>> 11fd8bcf8f4d75d3a6df0aa1d34bd26c3a603757
   }
 }
