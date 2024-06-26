@@ -3,7 +3,6 @@ import "./aboutme.css";
 import Navigation from '../../components/Navigation/navigation'
 import { BsFillMotherboardFill } from "react-icons/bs";
 import { FaIcons, FaMedal, FaUserTie   } from "react-icons/fa";
-import ScrollReveal from 'scrollreveal';
 import { useNavigate } from 'react-router-dom';
 
 function Aboutme() {
@@ -12,10 +11,8 @@ function Aboutme() {
     return (
         <>
             <Navigation item={'sobre'} />
-            <section className='container-home'>
-                <div className='linha-azul'></div>
-                <div className='container-conteudo-aboutme'>
-                    <h1 className='title-aboutme-contato'>{`<Mais Sobre Min/>`}</h1>
+            <section className='container-home mb-10 object-cover cursor-default'>
+                <div className='container-conteudo-aboutme h-fit pl-6 flex justify-center'>
                     <div className='title-formacao-aboutme'>
                         <h1 className='title-formacao-card'><BsFillMotherboardFill className='icon-aboutme'/> {`<Tecnologias e Ferramentas />`}</h1>
                         <h3>Aqui você verá mais sobre as Ferramentas e Tecnologias que já usei !</h3>

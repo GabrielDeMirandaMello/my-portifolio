@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .container-conteudo-aboutme {
     width: 100%;
     height: 100%;
@@ -71,44 +75,4 @@
 .icon-aboutme{
     width: 70px;
     height: auto;
-}
-@media screen and (max-width: 768px) {
-    .icon-aboutme{
-        width: 40px;
-        height: auto;
-    }
-    .title-formacao-aboutme {
-        width: 100%;
-        height: 200px;
-        color: #007FFF;
-        display: flex;
-        justify-content: space-around;
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 20px;
-        background-color: #303030;
-        padding: 30px;
-        border-radius: 20px;
-        font-size: 0.7rem;
-    }
-
-    .title-aboutme-contato {
-        color: #007FFF;
-        margin-bottom: 20px;
-    }
-    .linha-azul-aboutme{
-        display: none;
-    }
-    .title-formacao-aboutme button {
-        width: 80%;
-        height: 30px;
-        border-radius: 10px;
-        outline: none;
-        border: none;
-        cursor: pointer;
-        font-weight: 900;
-        background-color: #007FFF;
-        color: #FFF;
-        font-size: 0.8rem;
-    }
 }
