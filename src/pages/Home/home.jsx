@@ -1,75 +1,93 @@
 import React, { useEffect } from 'react';
 import "./home.css";
 import Navigation from '../../components/Navigation/navigation'
-import ScrollReveal from 'scrollreveal';
 
 function Home() {
-    useEffect(() => {
-        ScrollReveal().reveal('.img-home', { duration: 2000 });
-        ScrollReveal({ reset: true}).reveal('.letra1', { delay: 100 });
-        ScrollReveal().reveal('.letra2', { delay: 200 });
-        ScrollReveal().reveal('.letra3', { delay: 300 });
-        ScrollReveal().reveal('.letra4', { delay: 400 });
-        ScrollReveal().reveal('.letra5', { delay: 500 });
-        ScrollReveal().reveal('.letra6', { delay: 600 });
-        ScrollReveal().reveal('.letra7', { delay: 700 });
-        ScrollReveal().reveal('.letra8', { delay: 800 });
-        ScrollReveal().reveal('.letra9', { delay: 900 });
-        ScrollReveal().reveal('.letra10', { delay: 1000 });
-        ScrollReveal().reveal('.letra11', { delay: 1100 });
-        ScrollReveal().reveal('.letra12', { delay: 1200 });
-        ScrollReveal().reveal('.letra13', { delay: 1300 });
-        ScrollReveal().reveal('.letra14', { delay: 1400 });
-        ScrollReveal().reveal('.letra15', { delay: 1500 });
-        ScrollReveal().reveal('.letra16', { delay: 1600 });
-        ScrollReveal().reveal('.letra17', { delay: 1700 });
-        ScrollReveal().reveal('.letra18', { delay: 1800 });
-        ScrollReveal().reveal('.letra19', { delay: 1900 });
-        ScrollReveal().reveal('.letra20', { delay: 2000 });
-        ScrollReveal().reveal('.letra21', { delay: 2100 });
-        ScrollReveal().reveal('.letra22', { delay: 2200 });
-        ScrollReveal().reveal('.letra23', { delay: 2300 });
-        ScrollReveal().reveal('.letra24', { delay: 2400 });
-    })
 
     return (
         <>
             <Navigation item={'pagina inicial'} />
-            <section className='container-home'>
-                <div className='linha-azul'></div>
-                <div className='container-conteudo'>
-                    <div className='texto-home'>
-                        <p> Olá! Sou <span style={{ color: '#007FFF', fontWeight: 900 }}>
-                        <span className='letra1'>G</span>
-                        <span className='letra2'>a</span>
-                        <span className='letra3'>b</span>
-                        <span className='letra4'>r</span>
-                        <span className='letra5'>i</span>
-                        <span className='letra6'>e</span>
-                        <span className='letra7'>l</span>
-                        <span className='letra8'>_</span>
-                        <span className='letra9'>D</span>
-                        <span className='letra10'>e</span>
-                        <span className='letra11'>_</span>
-                        <span className='letra12'>M</span>
-                        <span className='letra13'>i</span>
-                        <span className='letra14'>r</span>
-                        <span className='letra15'>a</span>
-                        <span className='letra16'>n</span>
-                        <span className='letra17'>d</span>
-                        <span className='letra18'>a</span>
-                        <span className='letra19'>_</span>
-                        <span className='letra20'>M</span>
-                        <span className='letra21'>e</span>
-                        <span className='letra22'>l</span>
-                        <span className='letra23'>l</span>
-                        <span className='letra24'>o</span>
-
-                        </span> , um profissional apaixonado por Tecnologia. Estou aqui para compartilhar um pouco sobre mim e minhas habilidades.
-                        Desde jovem, sempre fui fascinado por Tecnologia. Ao longo dos anos, dediquei-me a aprimorar minhas habilidades e conhecimentos nesse campo, buscando constantemente novos desafios e oportunidades de crescimento.
-                        <br />
-                        Estou animado para compartilhar mais sobre meu trabalho e experiências. Convido você a explorar meu portfólio, onde você encontrará uma amostra dos projetos que realizei, as habilidades que possuo. Se você estiver interessado em colaborar ou tiver alguma pergunta, não hesite em entrar em contato. Estou ansioso para conectar-me.
+            <section className='container-home mb-10 object-cover'>
+                <div className='container-conteudo h-fit pl-6 flex justify-center'>
+                    <h1 className='text-5xl pb-3 text-blue-500 font-bold'>Gabriel Miranda Mello</h1>
+                    <div className='texto-home text-base'>
+                        <p> Olá! Sou um profissional apaixonado por Tecnologia. Estou aqui para compartilhar um pouco sobre mim e minhas habilidades.
+                            Desde jovem, sempre fui fascinado por Tecnologia. Ao longo dos anos, dediquei-me a aprimorar minhas habilidades e conhecimentos nesse campo, buscando constantemente novos desafios e oportunidades de crescimento.
+                            <br />
+                            Estou animado para compartilhar mais sobre meu trabalho e experiências. Convido você a explorar meu portfólio, onde você encontrará uma amostra dos projetos que realizei, as habilidades que possuo. Se você estiver interessado em colaborar ou tiver alguma pergunta, não hesite em entrar em contato. Estou ansioso para conectar-me.
                         </p>
+                    </div>
+                    <hr className='mt-10' />
+                    <h1 className='text-3xl pb-3 text-blue-400 font-bold'> Habilidades Tecnicas</h1>
+
+                    <div className='flex flex-wrap w-auto'>
+                        <div className='flex flex-wrap w-auto'>
+                            <div
+                                class="bg-gradient-to-r m-5 from-blue-400 to-indigo-500 rounded-lg overflow-hidden shadow-xl max-w-xs"
+                            >
+                                <div class="p-4">
+                                    <h2 class="text-lg font-semibold mb-2 text-white">Formação</h2>
+                                    <p class="text-sm mb-4 text-white">
+                                        Aqui você verá as faculdades e cursos que tenho concluido e em andamento.
+                                    </p>
+                                    <div class="flex justify-end space-x-4">
+                                        <button
+                                            class="duration-300 bg-black/0 hover:bg-black/25 text-white font-bold py-2 px-4 rounded"
+                                        >
+                                            Ir Para Formação
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='flex flex-wrap w-auto'>
+                            <div
+                                class="bg-gradient-to-r m-5 from-blue-400 to-indigo-500 rounded-lg overflow-hidden shadow-xl max-w-xs"
+                            >
+                                <div class="p-4">
+                                    <h2 class="text-lg font-semibold mb-2 text-white">Experiencias</h2>
+                                    <p class="text-sm mb-4 text-white">
+                                        Aqui você verá as faculdades e cursos que tenho concluido e em andamento.
+                                    </p>
+                                    <div class="flex justify-end space-x-4">
+                                        <button
+                                            class="duration-300 bg-black/0 hover:bg-black/25 text-white font-bold py-2 px-4 rounded"
+                                        >
+                                            Ir Para Experiencias
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='flex flex-wrap w-auto'>
+                            <div
+                                class="bg-gradient-to-r m-5 from-blue-400 to-indigo-500 rounded-lg overflow-hidden shadow-xl max-w-xs"
+                            >
+                                <div class="p-4">
+                                    <h2 class="text-lg font-semibold mb-2 text-white">Tecnologias</h2>
+                                    <p class="text-sm mb-4 text-white">
+                                        Aqui você verá as faculdades e cursos que tenho concluido e em andamento.
+                                    </p>
+                                    <div class="flex justify-end space-x-4">
+                                        <button
+                                            class="duration-300 bg-black/0 hover:bg-black/25 text-white font-bold py-2 px-4 rounded"
+                                        >
+                                            Ir Para Tecnologias
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr className='mt-10' />
+                    <h1 className='text-3xl pb-3 text-blue-400 font-bold'>Contato</h1>
+                    <div className='bg-zinc-500 pr-5 w-4/5'>
+                        <label htmlFor="">Assunto</label>
+                        <input type="text" />
+                        <label htmlFor="">E-mail</label>
+                        <input type="text" />
+                        <label htmlFor="">Mensagem</label>
+                        <input type="text" />
                     </div>
                 </div>
             </section>

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styles from "./navigation.css";
 import { useNavigate } from 'react-router-dom';
+import { BsFillHouseFill, BsFillMortarboardFill, BsFillDisplayFill, BsFillEnvelopePaperFill } from "react-icons/bs";
 
 function Navigation(props) {
     const navigate = useNavigate()
@@ -12,28 +13,21 @@ function Navigation(props) {
 
     return (
         <>
-            <nav className='container-navigation'>
-
-                <h1 className='logo-navigation' onClick={() => navigate('/')}>{`<Gabriel Mello/>`}</h1>
-                <ul className={`lista-navigation ${isOpen ? 'active' : ''}`}>
-                    <li className={props.item === 'pagina inicial' ? 'active' : ''} onClick={() => navigate('/')}>
-                        Pagina Inicial
+            <nav className='container-navigation flex justify-center mb-20 mt-20 w-full'>
+                <ul className={`lista-navigation p-5 rounded-xl text-2xl w-fit bg-blue-900 shadow-2xl ${isOpen ? 'active' : ''}`}>
+                    <li className={(props.item === 'pagina inicial' ? 'active flex items-center gap-5' : ' flex items-center gap-5 ')} onClick={() => navigate('/')}>
+                    <BsFillHouseFill /> <span className='hidden sm:hidden md:hidden lg:hidden xl:flex'>Inicio</span> 
                     </li>
-                    <li className={props.item === 'sobre' ? 'active' : ''} onClick={() => navigate('/aboutme')}>
-                        Sobre
+                    <li className={props.item === 'sobre' ? 'active flex items-center gap-5' : 'flex items-center gap-5'} onClick={() => navigate('/aboutme')}>
+                    <BsFillMortarboardFill /> <span className='hidden sm:hidden md:hidden lg:hidden xl:flex'>Estudos</span> 
                     </li>
-                    <li className={props.item === 'projetos' ? 'active' : ''} onClick={() => navigate('/projects')}>
-                        Projetos
+                    <li className={props.item === 'projetos' ? 'active flex items-center gap-5' : 'flex items-center gap-5'} onClick={() => navigate('/projects')}>
+                    <BsFillDisplayFill /> <span className='hidden sm:hidden md:hidden lg:hidden xl:flex'>Projetos</span> 
                     </li>
-                    <li className={props.item === 'contato' ? 'active' : ''} onClick={() => navigate('/contact')}>
-                        Contato
+                    <li className={props.item === 'contato' ? 'active flex items-center gap-5' : 'flex items-center gap-5'} onClick={() => navigate('/contact')}>
+                    <BsFillEnvelopePaperFill /> <span className='hidden sm:hidden md:hidden lg:hidden xl:flex'>Contato</span> 
                     </li>
                 </ul>
-                <div class="menu-hamburguer" id="menu-hamburguer" onClick={toggleMenu}>
-                    <div class="linha"></div>
-                    <div class="linha"></div>
-                    <div class="linha"></div>
-                </div>
             </nav>
 
         </>

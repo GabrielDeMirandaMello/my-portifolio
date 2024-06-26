@@ -3,7 +3,9 @@
   margin: 0;
   font-family: 'jura', Courier, monospace;
 }
-
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 body {
   color: #FFFFFF;
   margin: 20px 15% 0 15%;
@@ -30,11 +32,10 @@ body::-webkit-scrollbar-thumb,
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-  font-size: larger;
   border: 1px solid #007FFF;
   border-radius: 20px;
-  padding: 5%;
-  height: 60vh;
+  padding: 3%;
+  height: fit-content;
   /* From https://css.glass */
   background: rgba(255, 255, 255, 0.21);
   border-radius: 16px;
@@ -45,8 +46,6 @@ body::-webkit-scrollbar-thumb,
 }
 
 .linha-azul {
-  width: 1px;
-  height: 60vh;
   background-color: #007FFF;
   border: 5px solid #007FFF;
   border-radius: 20px;
@@ -55,8 +54,6 @@ body::-webkit-scrollbar-thumb,
 
 .container-conteudo {
   display: flex;
-  height: 50vh;
-  padding: 5% 0 5% 5%;
   overflow-x: hidden;
   overflow-x: scroll;
 }
@@ -76,8 +73,6 @@ body::-webkit-scrollbar-thumb,
 
 .texto-home {
   width: 100%;
-  text-align: left;
-  font-size: medium;
   font-weight: 600;
 }
 
