@@ -13,8 +13,8 @@ function Navigation(props) {
 
     return (
         <>
-            <nav className='container-navigation flex justify-center mb-20 mt-20 w-full'>
-                <ul className={`lista-navigation p-5 rounded-xl text-2xl w-fit bg-blue-900 shadow-2xl ${isOpen ? 'active' : ''}`}>
+            <nav className='container-navigation flex justify-center mx-50 my-20 w-full'>
+                <ul className={`lista-navigation px-1 py-1 gap-1 rounded-xl text-2xl w-fit bg-blue-900 shadow-2xl ${isOpen ? 'active' : ''}`}>
                     <li className={(props.item === 'pagina inicial' ? 'active flex items-center gap-5' : ' flex items-center gap-5 ')} onClick={() => navigate('/')}>
                     <BsFillHouseFill /> <span className='hidden sm:hidden md:hidden lg:hidden xl:flex'>Inicio</span> 
                     </li>

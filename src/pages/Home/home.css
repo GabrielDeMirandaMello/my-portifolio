@@ -8,7 +8,6 @@
 @tailwind utilities;
 body {
   color: #FFFFFF;
-  margin: 20px 15% 0 15%;
   background-image: url('../../assets/12979917_5084836.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -35,6 +34,7 @@ body::-webkit-scrollbar-thumb,
   border: 1px solid #007FFF;
   border-radius: 20px;
   padding: 3%;
+  margin: 0 10%;
   height: fit-content;
   /* From https://css.glass */
   background: rgba(255, 255, 255, 0.21);
@@ -64,15 +64,9 @@ body::-webkit-scrollbar-thumb,
   padding: 10px 0;
 }
 
-.lista-habilidades-home {
-  width: 100%;
-  padding: 0 -20px 0 20px;
-  margin-bottom: 20px;
-  list-style-type: #007FFF;
-}
+
 
 .texto-home {
-  width: 100%;
   font-weight: 600;
 }
 
@@ -85,34 +79,12 @@ body::-webkit-scrollbar-thumb,
     margin-bottom: 20px;
   }
 
-  .linha-azul {
-    display: none;
-  }
-
   .container-conteudo {
-    display: flex;
+    display: flex;  
     flex-direction: column;
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow-x: hidden;
-    overflow-x: scroll;
-  }
-
-  .texto-home {
-    width: 75%;
-    font-size: 0.8rem;
-  }
-}
-
-/* Desktop and Notebook Styles */
-@media only screen and (min-width: 768px) {
-  .texto-home {
-    font-size: medium;
-  }
-
-  .container-conteudo {
-    flex-direction: column;
     overflow-x: hidden;
     overflow-x: scroll;
   }
