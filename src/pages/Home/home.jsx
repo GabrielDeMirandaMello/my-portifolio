@@ -8,8 +8,8 @@ function Home() {
         <>
             <Navigation item={'pagina inicial'} />
             <section className='container-home mb-10 object-cover cursor-default'>
-                <div className='container-conteudo h-fit flex justify-center'>
-                    <h1 className='text-5xl pb-3 mx-5 text-blue-500 font-bold'>Gabriel Miranda Mello</h1>
+                <div className='container-conteudo h-fit flex justify-center items-center'>
+                    <h1 className='text-5xl pb-3 mx-5 text-blue-500 font-black'>Gabriel De Miranda Mello</h1>
                     <div className='texto-home mx-5 text-base'>
                         <p> Olá! Sou um profissional apaixonado por Tecnologia. Estou aqui para compartilhar um pouco sobre mim e minhas habilidades.
                             Desde jovem, sempre fui fascinado por Tecnologia. Ao longo dos anos, dediquei-me a aprimorar minhas habilidades e conhecimentos nesse campo, buscando constantemente novos desafios e oportunidades de crescimento.
@@ -18,7 +18,7 @@ function Home() {
                         </p>
                     </div>
                     <hr className='mt-10 mb-10' />
-                    <h1 className='text-3xl pb-3 mx-5 text-blue-400 font-bold'> Habilidades Tecnicas e Ferramentas</h1>
+                    <h1 className='text-3xl pb-3 mx-5 text-blue-500 font-bold'> Habilidades Tecnicas e Ferramentas</h1>
 
                     <div className='flex flex-wrap w-auto'>
                         <div className='flex flex-wrap w-auto'>
@@ -80,7 +80,7 @@ function Home() {
                         </div>
                     </div>
                     <hr className='mt-10 mb-10' />
-                    <h1 className='text-3xl pb-3 mx-5 text-blue-400 font-bold'>Formação e Cursos</h1>
+                    <h1 className='text-3xl pb-3 mx-5 text-blue-500 font-bold'>Formação e Cursos</h1>
                     <div className='flex flex-wrap w-auto'>
                         <div className='flex flex-wrap w-auto'>
                             <div

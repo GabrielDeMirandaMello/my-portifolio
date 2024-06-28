@@ -8,7 +8,7 @@
 @tailwind utilities;
 body {
   color: #FFFFFF;
-  background-image: url('../../assets/12979917_5084836.jpg');
+  background-image: linear-gradient(to bottom right, #6441A5 , #2a0845);
   background-repeat: no-repeat;
   background-size: cover;
   width: auto;
@@ -29,8 +29,6 @@ body::-webkit-scrollbar-thumb,
 
 .container-home {
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
   border: 1px solid #007FFF;
   border-radius: 20px;
   padding: 3%;
@@ -45,15 +43,9 @@ body::-webkit-scrollbar-thumb,
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.linha-azul {
-  background-color: #007FFF;
-  border: 5px solid #007FFF;
-  border-radius: 20px;
-  box-shadow: 0 0 100px 5px #007FFF;
-}
-
 .container-conteudo {
   display: flex;
+  flex-direction: column;
   overflow-x: hidden;
   overflow-x: scroll;
 }
