@@ -26,15 +26,15 @@ function Home() {
                                 class="bg-gradient-to-r m-5 from-blue-400 to-indigo-500 rounded-lg overflow-hidden shadow-xl max-w-xs"
                             >
                                 <div class="p-4">
-                                    <h2 class="text-lg font-semibold mb-2 text-white">Formação</h2>
+                                    <h2 class="text-lg font-semibold mb-2 text-white">Java</h2>
                                     <p class="text-sm mb-4 text-white">
-                                        Aqui você verá as faculdades e cursos que tenho concluido e em andamento.
+                                        Sintaxe Básica, Estruturas de Controle, Classes e Objetos, Herança e Polimorfismo, Encapsulamento, Tratamento de Exceções, Coleções e Generics.
                                     </p>
                                     <div class="flex justify-end space-x-4">
                                         <button
-                                            class="duration-300 bg-black/0 hover:bg-black/25 text-white font-bold py-2 px-4 rounded"
+                                            class="duration-300 bg-black/0 hover:bg-black/25 text-white font-bold py-2 px-4 rounded cursor-default"
                                         >
-                                            Ir Para Formação
+                                            Nivel Avançado
                                         </button>
                                     </div>
                                 </div>
@@ -45,15 +45,15 @@ function Home() {
                                 class="bg-gradient-to-r m-5 from-blue-400 to-indigo-500 rounded-lg overflow-hidden shadow-xl max-w-xs"
                             >
                                 <div class="p-4">
-                                    <h2 class="text-lg font-semibold mb-2 text-white">Experiencias</h2>
+                                    <h2 class="text-lg font-semibold mb-2 text-white">Docker</h2>
                                     <p class="text-sm mb-4 text-white">
-                                        Aqui você verá as faculdades e cursos que tenho concluido e em andamento.
+                                    Conceitos Básicos(Contêineres, Imagens), Comandos Básicos( docker run, docker pull, docker build, docker ps, docker rm e docker rmi), Dockerfile e Docker Compose.
                                     </p>
                                     <div class="flex justify-end space-x-4">
                                         <button
                                             class="duration-300 bg-black/0 hover:bg-black/25 text-white font-bold py-2 px-4 rounded"
                                         >
-                                            Ir Para Experiencias
+                                            Nivel Intermediario
                                         </button>
                                     </div>
                                 </div>
@@ -64,15 +64,15 @@ function Home() {
                                 class="bg-gradient-to-r m-5 from-blue-400 to-indigo-500 rounded-lg overflow-hidden shadow-xl max-w-xs"
                             >
                                 <div class="p-4">
-                                    <h2 class="text-lg font-semibold mb-2 text-white">Tecnologias</h2>
+                                    <h2 class="text-lg font-semibold mb-2 text-white">Spring Boot</h2>
                                     <p class="text-sm mb-4 text-white">
-                                        Aqui você verá as faculdades e cursos que tenho concluido e em andamento.
+                                    Inversão de Controle (IoC) e Injeção de Dependências (DI), Configuração do Spring, Spring Beans, Spring Data Access, Spring MVC, Spring Security, Spring REST e Spring Testing.
                                     </p>
                                     <div class="flex justify-end space-x-4">
                                         <button
                                             class="duration-300 bg-black/0 hover:bg-black/25 text-white font-bold py-2 px-4 rounded"
                                         >
-                                            Ir Para Tecnologias
+                                            Nivel Avançado
                                         </button>
                                     </div>
                                 </div>
@@ -87,15 +87,15 @@ function Home() {
                                 class="bg-gradient-to-r m-5 from-blue-400 to-indigo-500 rounded-lg overflow-hidden shadow-xl max-w-xs"
                             >
                                 <div class="p-4">
-                                    <h2 class="text-lg font-semibold mb-2 text-white">Formação</h2>
+                                    <h2 class="text-lg font-semibold mb-2 text-white">Administração</h2>
                                     <p class="text-sm mb-4 text-white">
-                                        Aqui você verá as faculdades e cursos que tenho concluido e em andamento.
+                                    Planejamento, Organização, Direção, Controle, Gestão de Pessoas (Recursos Humanos), Gestão Financeira, Marketing, Gestão da Produção e Operações, Tecnologia da Informação (TI), Ética e Responsabilidade Social.
                                     </p>
                                     <div class="flex justify-end space-x-4">
                                         <button
                                             class="duration-300 bg-black/0 hover:bg-black/25 text-white font-bold py-2 px-4 rounded"
                                         >
-                                            Ir Para Formação
+                                            Bacharel Concluido
                                         </button>
                                     </div>
                                 </div>
@@ -106,39 +106,21 @@ function Home() {
                                 class="bg-gradient-to-r m-5 from-blue-400 to-indigo-500 rounded-lg overflow-hidden shadow-xl max-w-xs"
                             >
                                 <div class="p-4">
-                                    <h2 class="text-lg font-semibold mb-2 text-white">Experiencias</h2>
+                                    <h2 class="text-lg font-semibold mb-2 text-white">Análise e Desenvolvimento de Sistemas</h2>
                                     <p class="text-sm mb-4 text-white">
-                                        Aqui você verá as faculdades e cursos que tenho concluido e em andamento.
+                                        ...
                                     </p>
                                     <div class="flex justify-end space-x-4">
                                         <button
                                             class="duration-300 bg-black/0 hover:bg-black/25 text-white font-bold py-2 px-4 rounded"
                                         >
-                                            Ir Para Experiencias
+                                            Bacharel Concluido
                                         </button>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div className='flex flex-wrap w-auto'>
-                            <div
-                                class="bg-gradient-to-r m-5 from-blue-400 to-indigo-500 rounded-lg overflow-hidden shadow-xl max-w-xs"
-                            >
-                                <div class="p-4">
-                                    <h2 class="text-lg font-semibold mb-2 text-white">Tecnologias</h2>
-                                    <p class="text-sm mb-4 text-white">
-                                        Aqui você verá as faculdades e cursos que tenho concluido e em andamento.
-                                    </p>
-                                    <div class="flex justify-end space-x-4">
-                                        <span
-                                            class="duration-300 bg-black/0 text-white font-bold py-2 px-4 rounded"
-                                        >
-                                            Ir Para Tecnologias
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
             </section>
