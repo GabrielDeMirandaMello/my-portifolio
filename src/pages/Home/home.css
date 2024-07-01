@@ -31,7 +31,6 @@ body::-webkit-scrollbar-thumb,
   display: flex;
   border: 1px solid #007FFF;
   border-radius: 20px;
-  padding: 3%;
   margin: 0 10%;
   height: fit-content;
   /* From https://css.glass */
