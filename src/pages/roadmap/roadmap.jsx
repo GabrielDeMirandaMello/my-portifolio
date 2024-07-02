@@ -40,14 +40,11 @@ function Aboutme() {
             icon: MdOutlineLens,
         }
     ]
-    const handleIconClick = () => {
-        window.open('https://drive.usercontent.google.com/u/0/uc?id=1vZGB7_9f4v7kufSlqTwogy_lRDZ6oRJY&export=download', '_blank', 'noopener,noreferrer');
-      };
     return (
         <>
             {/* https://drive.usercontent.google.com/u/0/uc?id=1vZGB7_9f4v7kufSlqTwogy_lRDZ6oRJY&export=download */}
             <Navigation item={'sobre'} />
-            <MdDownloadForOffline onClick={handleIconClick} className='fill-blue-500 fixed bottom-10 right-10 h-16 w-16 cursor-pointer' />
+            <MdDownloadForOffline onClick={() => {window.location.href = 'https://drive.usercontent.google.com/u/0/uc?id=1vZGB7_9f4v7kufSlqTwogy_lRDZ6oRJY&export=download'}} className='fill-blue-500 fixed bottom-10 right-10 h-16 w-16 cursor-pointer' />
             <section className='container-home mb-10 object-cover cursor-default'>
                 <div className='container-conteudo-aboutme h-fit pl-6 flex justify-center'>
                     <div className="overflow-hidden bg-transparent sm:py-8">

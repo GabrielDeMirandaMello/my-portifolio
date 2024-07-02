@@ -21,7 +21,7 @@ function Projects() {
     return (
         <>
             <Navigation item={'projetos'} />
-            <MdDownloadForOffline  className='fill-blue-500 fixed bottom-10 right-10 h-16 w-16 cursor-pointer'/>
+            <MdDownloadForOffline onClick={() => {window.location.href = 'https://drive.usercontent.google.com/u/0/uc?id=1vZGB7_9f4v7kufSlqTwogy_lRDZ6oRJY&export=download'}} className='fill-blue-500 fixed bottom-10 right-10 h-16 w-16 cursor-pointer' />
             <section className='container-home mb-20'>
                 <div className='container-conteudo-aboutme '>
                     <div className="bg-transparent py-24">
