@@ -1,12 +1,14 @@
 import React from 'react';
 import "./home.css";
 import Navigation from '../../components/Navigation/navigation'
+import { MdDownloadForOffline  } from "react-icons/md";
 
 function Home() {
 
     return (
         <>
             <Navigation item={'pagina inicial'} />
+            <MdDownloadForOffline  className='fill-blue-500 fixed bottom-10 right-10 h-16 w-16 cursor-pointer'/>
             <section className='container-home mb-10 object-cover'>
                 <div className='container-conteudo h-fit flex justify-center items-center'>
                     <h1 className='text-5xl pb-3 mx-5 my-5 text-blue-500 font-black'>Gabriel De Miranda Mello</h1>
@@ -22,16 +24,16 @@ function Home() {
                     <div className='flex flex-wrap w-auto'>
                         <div className='flex flex-wrap w-auto'>
                             <div
-                                class="bg-gradient-to-r m-5 from-blue-400 to-indigo-500 rounded-lg overflow-hidden shadow-xl max-w-xs"
+                                className="bg-gradient-to-r m-5 from-blue-400 to-indigo-500 rounded-lg overflow-hidden shadow-xl max-w-xs"
                             >
-                                <div class="p-4">
-                                    <h2 class="text-lg font-semibold mb-2 text-white">Java</h2>
-                                    <p class="text-sm mb-4 text-white">
+                                <div className="p-4">
+                                    <h2 className="text-lg font-semibold mb-2 text-white">Java</h2>
+                                    <p className="text-sm mb-4 text-white">
                                         Sintaxe Básica, Estruturas de Controle, Classes e Objetos, Herança e Polimorfismo, Encapsulamento, Tratamento de Exceções, Coleções e Generics.
                                     </p>
-                                    <div class="flex justify-end space-x-4">
+                                    <div className="flex justify-end space-x-4">
                                         <button
-                                            class="duration-300 bg-black/0 hover:bg-black/25 text-white font-bold py-2 px-4 rounded cursor-default"
+                                            className="duration-300 bg-black/0 hover:bg-black/25 text-white font-bold py-2 px-4 rounded cursor-default"
                                         >
                                             Nivel Avançado
                                         </button>
@@ -41,16 +43,16 @@ function Home() {
                         </div>
                         <div className='flex flex-wrap w-auto'>
                             <div
-                                class="bg-gradient-to-r m-5 from-blue-400 to-indigo-500 rounded-lg overflow-hidden shadow-xl max-w-xs"
+                                className="bg-gradient-to-r m-5 from-blue-400 to-indigo-500 rounded-lg overflow-hidden shadow-xl max-w-xs"
                             >
-                                <div class="p-4">
-                                    <h2 class="text-lg font-semibold mb-2 text-white">Docker</h2>
-                                    <p class="text-sm mb-4 text-white">
+                                <div className="p-4">
+                                    <h2 className="text-lg font-semibold mb-2 text-white">Docker</h2>
+                                    <p className="text-sm mb-4 text-white">
                                     Conceitos Básicos(Contêineres, Imagens), Comandos Básicos( docker run, docker pull, docker build, docker ps, docker rm e docker rmi), Dockerfile e Docker Compose.
                                     </p>
-                                    <div class="flex justify-end space-x-4">
+                                    <div className="flex justify-end space-x-4">
                                         <button
-                                            class="duration-300 bg-black/0 hover:bg-black/25 text-white font-bold py-2 px-4 rounded cursor-default"
+                                            className="duration-300 bg-black/0 hover:bg-black/25 text-white font-bold py-2 px-4 rounded cursor-default"
                                         >
                                             Nivel Intermediario
                                         </button>
@@ -60,16 +62,16 @@ function Home() {
                         </div>
                         <div className='flex flex-wrap w-auto'>
                             <div
-                                class="bg-gradient-to-r m-5 from-blue-400 to-indigo-500 rounded-lg overflow-hidden shadow-xl max-w-xs"
+                                className="bg-gradient-to-r m-5 from-blue-400 to-indigo-500 rounded-lg overflow-hidden shadow-xl max-w-xs"
                             >
-                                <div class="p-4">
-                                    <h2 class="text-lg font-semibold mb-2 text-white">Spring Boot</h2>
-                                    <p class="text-sm mb-4 text-white">
+                                <div className="p-4">
+                                    <h2 className="text-lg font-semibold mb-2 text-white">Spring Boot</h2>
+                                    <p className="text-sm mb-4 text-white">
                                     Inversão de Controle (IoC) e Injeção de Dependências (DI), Configuração do Spring, Spring Beans, Spring Data Access, Spring MVC, Spring Security, Spring REST e Spring Testing.
                                     </p>
-                                    <div class="flex justify-end space-x-4">
+                                    <div className="flex justify-end space-x-4">
                                         <button
-                                            class="duration-300 bg-black/0 hover:bg-black/25 text-white font-bold py-2 px-4 rounded cursor-default"
+                                            className="duration-300 bg-black/0 hover:bg-black/25 text-white font-bold py-2 px-4 rounded cursor-default"
                                         >
                                             Nivel Avançado
                                         </button>
@@ -83,16 +85,16 @@ function Home() {
                     <div className='flex flex-wrap w-auto'>
                         <div className='flex flex-wrap w-auto'>
                             <div
-                                class="bg-gradient-to-r m-5 from-blue-400 to-indigo-500 rounded-lg overflow-hidden shadow-xl max-w-xs"
+                                className="bg-gradient-to-r m-5 from-blue-400 to-indigo-500 rounded-lg overflow-hidden shadow-xl max-w-xs"
                             >
-                                <div class="p-4">
-                                    <h2 class="text-lg font-semibold mb-2 text-white">Administração</h2>
-                                    <p class="text-sm mb-4 text-white">
+                                <div className="p-4">
+                                    <h2 className="text-lg font-semibold mb-2 text-white">Administração</h2>
+                                    <p className="text-sm mb-4 text-white">
                                     Planejamento, Organização, Direção, Controle, Gestão de Pessoas (Recursos Humanos), Gestão Financeira, Marketing, Gestão da Produção e Operações, Tecnologia da Informação (TI), Ética e Responsabilidade Social.
                                     </p>
-                                    <div class="flex justify-end space-x-4">
+                                    <div className="flex justify-end space-x-4">
                                         <button
-                                            class="duration-300 bg-black/0 hover:bg-black/25 text-white font-bold py-2 px-4 rounded cursor-default"
+                                            className="duration-300 bg-black/0 hover:bg-black/25 text-white font-bold py-2 px-4 rounded cursor-default"
                                         >
                                             Bacharel Concluido
                                         </button>
@@ -102,16 +104,16 @@ function Home() {
                         </div>
                         <div className='flex flex-wrap w-auto'>
                             <div
-                                class="bg-gradient-to-r m-5 from-blue-400 to-indigo-500 rounded-lg overflow-hidden shadow-xl max-w-xs"
+                                className="bg-gradient-to-r m-5 from-blue-400 to-indigo-500 rounded-lg overflow-hidden shadow-xl max-w-xs"
                             >
-                                <div class="p-4">
-                                    <h2 class="text-lg font-semibold mb-2 text-white">Análise e Desenvolvimento de Sistemas</h2>
-                                    <p class="text-sm mb-4 text-white">
+                                <div className="p-4">
+                                    <h2 className="text-lg font-semibold mb-2 text-white">Análise e Desenvolvimento de Sistemas</h2>
+                                    <p className="text-sm mb-4 text-white">
                                         ...
                                     </p>
-                                    <div class="flex justify-end space-x-4">
+                                    <div className="flex justify-end space-x-4">
                                         <button
-                                            class="duration-300 bg-black/0 hover:bg-black/25 text-white font-bold py-2 px-4 rounded cursor-default"
+                                            className="duration-300 bg-black/0 hover:bg-black/25 text-white font-bold py-2 px-4 rounded cursor-default"
                                         >
                                             Bacharel Concluido
                                         </button>
@@ -126,7 +128,6 @@ function Home() {
             <footer className='w-full flex justify-center'> 
                 <h4 className='font-black'>Criado por Gabriel Mello, 2024</h4>
             </footer>
-
         </>
     )
 }

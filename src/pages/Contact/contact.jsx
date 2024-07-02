@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import "./contact.css";
 import Navigation from '../../components/Navigation/navigation'
-import { BsGithub, BsLinkedin } from "react-icons/bs";
 import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2'
 import ContactForm from "../../components/Contact/contact"
+import { MdDownloadForOffline  } from "react-icons/md";
 
 function Contact() {
     const [toEmail, setToEmail] = useState('');
@@ -50,6 +50,7 @@ function Contact() {
     return (
         <>
             <Navigation item={'contato'} />
+            <MdDownloadForOffline  className='fill-blue-500 fixed bottom-10 right-10 h-16 w-16 cursor-pointer'/>
             <section className='container-home mb-20'>
                 <div className='container-conteudo-contato'>
                     <ContactForm />

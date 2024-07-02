@@ -3,15 +3,16 @@ import "./roadmap.css";
 import Navigation from '../../components/Navigation/navigation'
 import { BsFillMortarboardFill } from "react-icons/bs";
 import { MdCheckCircle, MdOutlineLens } from "react-icons/md";
+import { MdDownloadForOffline } from "react-icons/md";
 
 function Aboutme() {
-    
+
     const features = [
         {
-          name: 'Java Avançado:',
-          description:
-            'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-          icon: MdCheckCircle,
+            name: 'Java Avançado:',
+            description:
+                'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+            icon: MdCheckCircle,
         },
         {
             name: 'Docker:',
@@ -19,40 +20,34 @@ function Aboutme() {
             icon: MdCheckCircle,
         },
         {
-          name: 'Banco de Dados:',
-          description: 'Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.',
-          icon: MdOutlineLens,
-        },
-        {
-          name: 'Arquitetura de Software:',
-          description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
-          icon: MdOutlineLens,
+            name: 'Banco de Dados:',
+            description: 'Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.',
+            icon: MdOutlineLens,
         },
         {
             name: 'Arquitetura de Software:',
             description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
             icon: MdOutlineLens,
-          },
-          {
+        },
+        {
             name: 'Arquitetura de Software:',
             description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
             icon: MdOutlineLens,
-          },
-          {
+        },
+        {
             name: 'Arquitetura de Software:',
             description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
             icon: MdOutlineLens,
-          },
-          {
-            name: 'Arquitetura de Software:',
-            description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
-            icon: MdOutlineLens,
-          },
-      ]
-
+        }
+    ]
+    const handleIconClick = () => {
+        window.open('https://drive.usercontent.google.com/u/0/uc?id=1vZGB7_9f4v7kufSlqTwogy_lRDZ6oRJY&export=download', '_blank', 'noopener,noreferrer');
+      };
     return (
         <>
+            {/* https://drive.usercontent.google.com/u/0/uc?id=1vZGB7_9f4v7kufSlqTwogy_lRDZ6oRJY&export=download */}
             <Navigation item={'sobre'} />
+            <MdDownloadForOffline onClick={handleIconClick} className='fill-blue-500 fixed bottom-10 right-10 h-16 w-16 cursor-pointer' />
             <section className='container-home mb-10 object-cover cursor-default'>
                 <div className='container-conteudo-aboutme h-fit pl-6 flex justify-center'>
                     <div className="overflow-hidden bg-transparent sm:py-8">
@@ -62,7 +57,7 @@ function Aboutme() {
                                     <div className="lg:max-w-lg">
                                         <p className="text-3xl tracking-tight text-blue-500 font-black sm:text-4xl">Meus proximos estudos</p>
                                         <p className="mt-6 text-lg leading-8 text-white">
-                                            Proximos itens que irei estudar para me aprofundar os meus conhecimentos em desenvolvimento backend. 
+                                            Proximos itens que irei estudar para me aprofundar os meus conhecimentos em desenvolvimento backend.
                                         </p>
                                         <dl className="mt-10 max-w-xl space-y-8 text-base leading-6 text-white lg:max-w-none">
                                             {features.map((feature) => (

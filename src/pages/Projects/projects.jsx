@@ -1,6 +1,6 @@
 import React from 'react';
 import Navigation from '../../components/Navigation/navigation'
-import Card from '../../components/Cards/card';
+import { MdDownloadForOffline  } from "react-icons/md";
 
 function Projects() {
 
@@ -21,6 +21,7 @@ function Projects() {
     return (
         <>
             <Navigation item={'projetos'} />
+            <MdDownloadForOffline  className='fill-blue-500 fixed bottom-10 right-10 h-16 w-16 cursor-pointer'/>
             <section className='container-home mb-20'>
                 <div className='container-conteudo-aboutme '>
                     <div className="bg-transparent py-24">

@@ -11,8 +11,6 @@ body {
   background-image: linear-gradient(to bottom right, #6441A5 , #2a0845);
   background-repeat: no-repeat;
   background-size: cover;
-  width: auto;
-  height: fit-content;
 }
 
 body::-webkit-scrollbar,
