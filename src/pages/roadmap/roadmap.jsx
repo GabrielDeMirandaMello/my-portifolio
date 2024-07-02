@@ -1,55 +1,45 @@
 import React from 'react';
 import "./roadmap.css";
 import Navigation from '../../components/Navigation/navigation'
-import { BsFillMortarboardFill } from "react-icons/bs";
 import { MdCheckCircle, MdOutlineLens } from "react-icons/md";
 import { MdDownloadForOffline } from "react-icons/md";
+import ImagemEstudando from '../../assets/close-up-homem-trabalhando-com-laptop.jpg'
+import { useNavigate } from 'react-router-dom';
 
 function Aboutme() {
-
+    const navigate = useNavigate()
     const features = [
         {
             name: 'Java Avançado:',
             description:
-                'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+                'Threads, Generics, Serialization, Spring Cloud, Spring Batch, Hibernate, SLF4J, JDBC Template e Rest Assured.',
             icon: MdCheckCircle,
         },
         {
-            name: 'Docker:',
-            description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
+            name: 'AWS:',
+            description: 'Fundamentos de AWS, Lambda, S3 (Simple Storage Service), Aurora, Microservices with AWS.',
             icon: MdCheckCircle,
         },
         {
-            name: 'Banco de Dados:',
-            description: 'Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.',
+            name: 'Architectural Patterns:',
+            description: 'Monolithic Apps, Microservices, Service-Oriented Architecture.',
             icon: MdOutlineLens,
         },
         {
-            name: 'Arquitetura de Software:',
-            description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
-            icon: MdOutlineLens,
-        },
-        {
-            name: 'Arquitetura de Software:',
-            description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
-            icon: MdOutlineLens,
-        },
-        {
-            name: 'Arquitetura de Software:',
-            description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
+            name: 'Design Patterns:',
+            description: 'MVC (Model-View-Controller), Microservices, Producer-Consumer, Observer.',
             icon: MdOutlineLens,
         }
     ]
     return (
         <>
-            {/* https://drive.usercontent.google.com/u/0/uc?id=1vZGB7_9f4v7kufSlqTwogy_lRDZ6oRJY&export=download */}
             <Navigation item={'sobre'} />
-            <MdDownloadForOffline onClick={() => {window.location.href = 'https://drive.usercontent.google.com/u/0/uc?id=1vZGB7_9f4v7kufSlqTwogy_lRDZ6oRJY&export=download'}} className='fill-blue-500 fixed bottom-10 right-10 h-16 w-16 cursor-pointer' />
+            <MdDownloadForOffline onClick={() => { window.location.href = 'https://drive.usercontent.google.com/u/0/uc?id=1vZGB7_9f4v7kufSlqTwogy_lRDZ6oRJY&export=download' }} className='fill-blue-500 fixed bottom-10 right-10 h-16 w-16 cursor-pointer' />
             <section className='container-home mb-10 object-cover cursor-default'>
                 <div className='container-conteudo-aboutme h-fit pl-6 flex justify-center'>
                     <div className="overflow-hidden bg-transparent sm:py-8">
                         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-                            <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-10 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+                            <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-20 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
                                 <div className="lg:pr-8 lg:pt-4">
                                     <div className="lg:max-w-lg">
                                         <p className="text-3xl tracking-tight text-blue-500 font-black sm:text-4xl">Meus proximos estudos</p>
@@ -66,10 +56,14 @@ function Aboutme() {
                                                     <dd className="inline">{feature.description}</dd>
                                                 </div>
                                             ))}
+                                            <button onClick={() => navigate('/contact')} class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full animate-pulse">
+                                                Mande Dicas sobre o que estudar
+                                            </button>
                                         </dl>
                                     </div>
                                 </div>
-                                <BsFillMortarboardFill
+                                <img
+                                    src={ImagemEstudando}
                                     alt="Product screenshot"
                                     className="w-[10rem] h-auto max-w-none rounded-xl sm:w-[30rem] md:-ml-4 lg:-ml-0"
                                 />
