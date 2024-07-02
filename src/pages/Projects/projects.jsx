@@ -1,27 +1,13 @@
 import React from 'react';
 import Navigation from '../../components/Navigation/navigation'
-import { MdDownloadForOffline  } from "react-icons/md";
+import { MdDownloadForOffline } from "react-icons/md";
 
 function Projects() {
-
-    const posts = [
-        {
-          id: 1,
-          title: 'History Travels (Front-End)',
-          href: '#',
-          description:
-            'Este projeto foi feito com o intuito de aprimorar meus conhecimentos, consiste em uma rede social para pessoas que gostam de viajar e poder compartilhar locais com as pessoas e somente compartilhar as viajens. Tecnologias e Ferramentas usadas no Front End: JavaScript, React.js, HTML 5, CSS3 e Node.js.',
-          date: 'Periodo: Janeiro de 2024 à Março de 2024',
-          datetime: '2020-03-16',
-          category: { title: 'Github', href: 'https://github.com/GabrielDeMirandaMello/NewIndividualProjectFrontEnd' },
-        },
-        // More posts...
-      ]
 
     return (
         <>
             <Navigation item={'projetos'} />
-            <MdDownloadForOffline onClick={() => {window.location.href = 'https://drive.usercontent.google.com/u/0/uc?id=1vZGB7_9f4v7kufSlqTwogy_lRDZ6oRJY&export=download'}} className='fill-blue-500 fixed bottom-10 right-10 h-16 w-16 cursor-pointer' />
+            <MdDownloadForOffline onClick={() => { window.location.href = 'https://drive.usercontent.google.com/u/0/uc?id=1vZGB7_9f4v7kufSlqTwogy_lRDZ6oRJY&export=download' }} className='fill-blue-500 fixed bottom-10 right-10 h-16 w-16 cursor-pointer' />
             <section className='container-home mb-20'>
                 <div className='container-conteudo-aboutme '>
                     <div className="bg-transparent py-24">
@@ -33,30 +19,92 @@ function Projects() {
                                 </p>
                             </div>
                             <div className="mx-auto mt-2 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-10 sm:mt-10 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-                                {posts.map((post) => (
-                                    <article key={post.id} className="flex max-w-xl flex-col items-start justify-between">
-                                        <div className="flex items-center gap-x-4 text-xs">
-                                            <time dateTime={post.datetime} className="text-white">
-                                                {post.date}
-                                            </time>
-                                            <a
-                                                href={post.category.href}
-                                                className="relative z-10 rounded-full bg-blue-500 px-3 py-1.5 font-medium text-white hover:bg-gray-100 hover:text-blue-500"
-                                            >
-                                                {post.category.title}
-                                            </a>
-                                        </div>
-                                        <div className="group relative p-2 mt-5 border-2 border-blue-500 rounded-xl hover:bg-white bg-blue-500">
-                                            <h3 className="mt-3 text-lg font-semibold leading-6 group-hover:text-blue-500 text-white ">
-                                                <a href={post.href}>
-                                                    <span className="absolute inset-0" />
-                                                    {post.title}
-                                                </a>
-                                            </h3>
-                                            <p className="mt-5 line-clamp-3 text-sm font-bold leading-6 group-hover:text-blue-500 text-white">{post.description}</p>
-                                        </div>
-                                    </article>
-                                ))}
+                                <div class="service-card rounded-xl w-4/4 shadow-xl cursor-pointer snap-start shrink-0 py-8 px-6 bg-white flex flex-col items-start gap-3 transition-all duration-300 group hover:bg-blue-500">
+                                    <svg
+                                        stroke-linejoin="round"
+                                        stroke-linecap="round"
+                                        stroke-width="2"
+                                        stroke="#000000"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                        class="text-5xl h-12 w-12 stroke-black group-hover:stroke-white"
+
+                                    >
+                                        <rect ry="2" rx="2" height="14" width="20" y="3" x="2"></rect>
+                                        <line y2="21" x2="16" y1="21" x1="8"></line>
+                                        <line y2="21" x2="12" y1="17" x1="12"></line>
+                                    </svg>
+
+                                    <p class="font-bold text-2xl group-hover:text-white text-black">
+                                        Cross Game
+                                    </p>
+                                    <p class="text-black group-hover:text-white text-sm font-black">
+                                        Website criado para ser um match making de jogadores e conseguir gerar mais conexão entre pessoas. <br />
+                                        Tecnologias usadas no Front-End: React, HTML5 e CSS3. <br />
+                                        Tecnologias usadas no Back-End: Java, Spring Boot, Docker, AWS EC2, Jenkins.
+                                    </p>
+                                    <p
+                                        class="text-5xl text-black group-hover:text-white font-bold self-end"
+                                    >
+                                        01
+                                    </p>
+                                </div>
+                                <div class="service-card rounded-xl w-4/4 shadow-xl cursor-pointer snap-start shrink-0 py-8 px-6 bg-white flex flex-col items-start gap-3 transition-all duration-300 group hover:bg-blue-500">
+                                    <svg
+                                        stroke-linejoin="round"
+                                        stroke-linecap="round"
+                                        stroke-width="2"
+                                        stroke="#000000"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                        class="text-5xl h-12 w-12 stroke-black group-hover:stroke-white"
+
+                                    >
+                                        <rect ry="2" rx="2" height="14" width="20" y="3" x="2"></rect>
+                                        <line y2="21" x2="16" y1="21" x1="8"></line>
+                                        <line y2="21" x2="12" y1="17" x1="12"></line>
+                                    </svg>
+
+                                    <p class="font-bold text-2xl group-hover:text-white text-black">
+                                        History Travels (Front-End)
+                                    </p>
+                                    <p class="text-black group-hover:text-white text-sm font-black">
+                                    Este projeto foi feito com o intuito de aprimorar meus conhecimentos, consiste em uma rede social para pessoas que gostam de viajar e compartilhar locais legais. Tecnologias usadas: React.js, HTML5, CSS3 e vercel.app.
+                                    </p>
+                                    <p
+                                        class="text-5xl text-black group-hover:text-white font-bold self-end"
+                                    >
+                                        02
+                                    </p>
+                                </div>
+                                <div class="service-card rounded-xl w-4/4 shadow-xl cursor-pointer snap-start shrink-0 py-8 px-6 bg-white flex flex-col items-start gap-3 transition-all duration-300 group hover:bg-blue-500">
+                                    <svg
+                                        stroke-linejoin="round"
+                                        stroke-linecap="round"
+                                        stroke-width="2"
+                                        stroke="#000000"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                        class="text-5xl h-12 w-12 stroke-black group-hover:stroke-white"
+
+                                    >
+                                        <rect ry="2" rx="2" height="14" width="20" y="3" x="2"></rect>
+                                        <line y2="21" x2="16" y1="21" x1="8"></line>
+                                        <line y2="21" x2="12" y1="17" x1="12"></line>
+                                    </svg>
+
+                                    <p class="font-bold text-2xl group-hover:text-white text-black">
+                                        History Travels (Back-End)
+                                    </p>
+                                    <p class="text-black group-hover:text-white text-sm font-bold">
+                                    Este projeto foi feito com o intuito de aprimorar meus conhecimentos, consiste em uma rede social para pessoas que gostam de viajar e compartilhar locais legais. Tecnologias e Ferramentas do Back End: Java, Spring Boot, PostgreSQL, Docker, Maven, JUnit, Clean Architecture, JiraSoftware, Render.
+                                    </p>
+                                    <p
+                                        class="text-5xl text-black group-hover:text-white font-bold self-end"
+                                    >
+                                        03
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
