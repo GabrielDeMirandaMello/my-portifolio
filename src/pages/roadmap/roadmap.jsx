@@ -39,7 +39,7 @@ function Aboutme() {
                 <div className='container-conteudo-aboutme h-fit pl-6 flex justify-center'>
                     <div className="overflow-hidden bg-transparent sm:py-8">
                         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-                            <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-20 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+                            <div className="mx-auto grid max-w-2xl my-5 grid-cols-1 gap-x-20 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
                                 <div className="lg:pr-8 lg:pt-4">
                                     <div className="lg:max-w-lg">
                                         <p className="text-3xl tracking-tight text-blue-500 font-black sm:text-4xl">Meus proximos estudos</p>
@@ -65,7 +65,7 @@ function Aboutme() {
                                 <img
                                     src={ImagemEstudando}
                                     alt="Product screenshot"
-                                    className="w-[10rem] h-auto max-w-none rounded-xl sm:w-[30rem] md:-ml-4 lg:-ml-0"
+                                    className="hidden sm:flex h-auto max-w-none rounded-xl sm:w-[30rem] md:-ml-4 lg:-ml-0"
                                 />
                             </div>
                         </div>
