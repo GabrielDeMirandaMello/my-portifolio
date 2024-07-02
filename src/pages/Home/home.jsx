@@ -8,8 +8,8 @@ function Home() {
     return (
         <>
             <Navigation item={'pagina inicial'} />
-            <MdDownloadForOffline onClick={() => {window.location.href = 'https://drive.usercontent.google.com/u/0/uc?id=1vZGB7_9f4v7kufSlqTwogy_lRDZ6oRJY&export=download'}} className='fill-blue-500 fixed bottom-10 right-10 h-16 w-16 cursor-pointer' />
-            <section className='container-home mb-10 object-cover'>
+            
+            <section className='container-home static mb-10 object-cover'>
                 <div className='container-conteudo h-fit flex justify-center items-center'>
                     <h1 className='text-5xl pb-3 mx-5 my-5 text-blue-500 font-black'>Gabriel De Miranda Mello</h1>
                     <div className='texto-home mx-5 text-lg text-justify w-3/4'>
@@ -125,6 +125,7 @@ function Home() {
                     </div>
                 </div>
             </section>
+            <MdDownloadForOffline onClick={() => {window.location.href = 'https://drive.usercontent.google.com/u/0/uc?id=1vZGB7_9f4v7kufSlqTwogy_lRDZ6oRJY&export=download'}} className='fill-blue-500 fixed bottom-10 right-10 h-16 w-16 cursor-pointer' />
             <footer className='w-full flex justify-center'> 
                 <h4 className='font-black'>Criado por Gabriel Mello, 2024</h4>
             </footer>
