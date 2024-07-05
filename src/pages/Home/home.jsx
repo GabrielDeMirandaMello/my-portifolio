@@ -1,14 +1,14 @@
 import React from 'react';
 import "./home.css";
 import Navigation from '../../components/Navigation/navigation'
-import { MdDownloadForOffline  } from "react-icons/md";
+import { MdDownloadForOffline } from "react-icons/md";
 
 function Home() {
 
     return (
         <>
             <Navigation item={'pagina inicial'} />
-            
+
             <section className='container-home static mb-10 object-cover'>
                 <div className='container-conteudo h-fit flex justify-center items-center'>
                     <h1 className='text-5xl pb-3 mx-5 my-5 text-blue-500 font-black'>Gabriel De Miranda Mello</h1>
@@ -48,7 +48,7 @@ function Home() {
                                 <div className="p-4">
                                     <h2 className="text-lg font-semibold mb-2 text-white">Docker</h2>
                                     <p className="text-sm mb-4 text-white">
-                                    Conceitos Básicos(Contêineres, Imagens), Comandos Básicos( docker run, docker pull, docker build, docker ps, docker rm e docker rmi), Dockerfile e Docker Compose.
+                                        Conceitos Básicos(Contêineres, Imagens), Comandos Básicos( docker run, docker pull, docker build, docker ps, docker rm e docker rmi), Dockerfile e Docker Compose.
                                     </p>
                                     <div className="flex justify-end space-x-4">
                                         <button
@@ -67,7 +67,7 @@ function Home() {
                                 <div className="p-4">
                                     <h2 className="text-lg font-semibold mb-2 text-white">Spring Boot</h2>
                                     <p className="text-sm mb-4 text-white">
-                                    Inversão de Controle (IoC) e Injeção de Dependências (DI), Configuração do Spring, Spring Beans, Spring Data Access, Spring MVC, Spring Security, Spring REST e Spring Testing.
+                                        Inversão de Controle (IoC) e Injeção de Dependências (DI), Configuração do Spring, Spring Beans, Spring Data Access, Spring MVC, Spring Security, Spring REST e Spring Testing.
                                     </p>
                                     <div className="flex justify-end space-x-4">
                                         <button
@@ -90,7 +90,7 @@ function Home() {
                                 <div className="p-4">
                                     <h2 className="text-lg font-semibold mb-2 text-white">Administração</h2>
                                     <p className="text-sm mb-4 text-white">
-                                    Planejamento, Organização, Direção, Controle, Gestão de Pessoas (Recursos Humanos), Gestão Financeira, Marketing, Gestão da Produção e Operações, Tecnologia da Informação (TI), Ética e Responsabilidade Social.
+                                        Planejamento, Organização, Direção, Controle, Gestão de Pessoas (Recursos Humanos), Gestão Financeira, Marketing, Gestão da Produção e Operações, Tecnologia da Informação (TI), Ética e Responsabilidade Social.
                                     </p>
                                     <div className="flex justify-end space-x-4">
                                         <button
@@ -104,12 +104,15 @@ function Home() {
                         </div>
                         <div className='flex flex-wrap w-auto'>
                             <div
-                                className="bg-gradient-to-r m-5 from-blue-400 to-indigo-500 rounded-lg overflow-hidden shadow-xl max-w-xs"
+                                className="bg-gradient-to-r m-5 from-blue-400 to-indigo-500 rounded-lg overflow-hidden shadow-xl max-w-md"
                             >
                                 <div className="p-4">
                                     <h2 className="text-lg font-semibold mb-2 text-white">Análise e Desenvolvimento de Sistemas</h2>
                                     <p className="text-sm mb-4 text-white">
-                                        ...
+                                        Habilidades adquiridas e usadas: 1° Semestre: Javascript, node.js, HTML e CSS, Mysql e Git.
+                                        2° Semestre: Java, Javascript, node.js, HTML, CSS, Mysql, Git.
+                                        3° Semestre React.js e CSS para o front-end, Spring Boot, Spring Security, JWT, Mysql.
+                                        4° Semestre Realizando a criação do APP android do projeto do 3° semestre usando kotlin.
                                     </p>
                                     <div className="flex justify-end space-x-4">
                                         <button
@@ -121,12 +124,12 @@ function Home() {
                                 </div>
                             </div>
                         </div>
-                        
+
                     </div>
                 </div>
             </section>
-            <MdDownloadForOffline onClick={() => {window.location.href = 'https://drive.usercontent.google.com/u/0/uc?id=1vZGB7_9f4v7kufSlqTwogy_lRDZ6oRJY&export=download'}} className='fill-blue-500 fixed bottom-10 right-10 h-16 w-16 cursor-pointer' />
-            <footer className='w-full flex justify-center'> 
+            <MdDownloadForOffline onClick={() => { window.location.href = 'https://drive.usercontent.google.com/u/0/uc?id=1vZGB7_9f4v7kufSlqTwogy_lRDZ6oRJY&export=download' }} className='fill-blue-500 fixed bottom-10 right-10 h-16 w-16 cursor-pointer' />
+            <footer className='w-full flex justify-center'>
                 <h4 className='font-black'>Criado por Gabriel Mello, 2024</h4>
             </footer>
         </>
