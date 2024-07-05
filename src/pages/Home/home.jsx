@@ -79,6 +79,26 @@ function Home() {
                                 </div>
                             </div>
                         </div>
+                        <div className='flex flex-wrap w-auto'>
+                            <div
+                                className="bg-gradient-to-r m-5 from-blue-400 to-indigo-500 rounded-lg overflow-hidden shadow-xl max-w-xs"
+                            >
+                                <div className="p-4">
+                                    <h2 className="text-lg font-semibold mb-2 text-white">Postman</h2>
+                                    <p className="text-sm mb-4 text-white">
+                                        ...
+                                    </p>
+                                    <div className="flex justify-end space-x-4">
+                                        <button
+                                            className="duration-300 bg-black/0 hover:bg-black/25 text-white font-bold py-2 px-4 rounded cursor-default"
+                                        >
+                                            Nivel Intermediario
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
                     </div>
                     <hr className='w-3/4  mt-5 mb-5' />
                     <h1 className='text-3xl pb-3 mx-5 text-blue-500 font-black'>Formação e Cursos</h1>
