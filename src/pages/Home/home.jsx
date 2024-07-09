@@ -5,12 +5,142 @@ import { MdDownloadForOffline } from "react-icons/md";
 
 function Home() {
 
+    const languages = [
+        {
+            title: "Java",
+            description: "Sintaxe Básica, Estruturas de Controle, Classes e Objetos, Herança e Polimorfismo, Encapsulamento, Tratamento de Exceções, Coleções e Generics.",
+            levelOfExperience: "Nivel Avançado"
+        },
+        {
+            title: "JavaScript",
+            description: "",
+            levelOfExperience: "Nivel Intermediario"
+        }
+    ]
+
+    const backEndTecnologies = [
+        {
+            title: "Spring Boot",
+            description: "Inversão de Controle (IoC) e Injeção de Dependências (DI), Configuração do Spring, Spring Beans, Spring Data Access, Spring MVC, Spring Security, Spring REST e Spring Testing.",
+            levelOfExperience: "Nivel Avançado"
+        },
+        {
+            title: "JWT",
+            description: "",
+            levelOfExperience: "Nivel Intermediario"
+        },
+        {
+            title: "JUnit",
+            description: "",
+            levelOfExperience: "Nivel Intermediario"
+        },
+        {
+            title: "MySql",
+            description: "",
+            levelOfExperience: "Nivel Intermediario"
+        },
+        {
+            title: "PostgreSql",
+            description: "",
+            levelOfExperience: "Nivel Intermediario"
+        },
+        {
+            title: "Swagger",
+            description: "",
+            levelOfExperience: "Nivel Intermediario"
+        },
+        {
+            title: "React",
+            description: "Performace, otimização, useState, useEfect, Axios, React icons e React Tailwind.",
+            levelOfExperience: "Nivel Intermediario"
+        },
+        {
+            title: "Tailwind CSS",
+            description: "",
+            levelOfExperience: "Nivel Intermediario"
+        }
+    ]
+    const tools = [
+        {
+            title: "GitFlow",
+            description: "",
+            levelOfExperience: "Nivel Avançado"
+        },
+        {
+            title: "Docker",
+            description: "Conceitos Básicos(Contêineres, Imagens), Comandos Básicos( docker run, docker pull, docker build, docker ps, docker rm e docker rmi), Dockerfile e Docker Compose.",
+            levelOfExperience: "Nivel Intermediario"
+        },
+        {
+            title: "Kubernetes",
+            description: "",
+            levelOfExperience: "Nivel Intermediario"
+        },
+        {
+            title: "AWS",
+            description: "",
+            levelOfExperience: "Nivel Intermediario"
+        },
+        {
+            title: "Kafka",
+            description: "",
+            levelOfExperience: "Nivel Intermediario"
+        },
+        {
+            title: "Postman",
+            description: "",
+            levelOfExperience: "Nivel Intermediario"
+        },
+        {
+            title: "Maven",
+            description: "",
+            levelOfExperience: "Nivel Intermediario"
+        },
+        {
+            title: "Kibana",
+            description: "",
+            levelOfExperience: "Nivel Intermediario"
+        },
+        {
+            title: "Minio",
+            description: "",
+            levelOfExperience: "Nivel Intermediario"
+        },
+        {
+            title: "DBeaver",
+            description: "",
+            levelOfExperience: "Nivel Intermediario"
+        }
+    ]
+    const others = [
+        {
+            title: "Jira",
+            description: "",
+            levelOfExperience: "Nivel Avançado"
+        },
+        {
+            title: "Bitbucket",
+            description: "",
+            levelOfExperience: "Nivel Intermediario"
+        },
+        {
+            title: "Confluence",
+            description: "",
+            levelOfExperience: "Nivel Intermediario"
+        },
+        {
+            title: "Metodologias Ágeis (Scrum, Kanban)",
+            description: "",
+            levelOfExperience: "Nivel Intermediario"
+        }
+    ]
+
     return (
         <>
             <Navigation item={'pagina inicial'} />
 
             <section className='container-home static mb-10 object-cover'>
-                <div className='container-conteudo h-fit flex justify-center items-center'>
+                <div className='container-conteudo h-fit flex justify-start items-start pl-10'>
                     <h1 className='text-5xl pb-3 mx-5 my-5 text-blue-500 font-black'>Gabriel De Miranda Mello</h1>
                     <div className='texto-home mx-5 text-lg text-justify w-3/4'>
                         <p> Olá! Sou <span className='text-blue-500 font-black'>Desenvolvedor Back-End</span> apaixonado por Tecnologia. Estou aqui para compartilhar um pouco sobre mim e as tecnologias que utilizo.
@@ -19,89 +149,35 @@ function Home() {
                         </p>
                     </div>
                     <hr className='w-3/4 mt-5 mb-5' />
-                    <h1 className='text-3xl pb-3 mx-5 text-blue-500 font-black'> Habilidades Tecnicas e Ferramentas</h1>
+                    <h1 className='text-3xl pb-3 mx-5 text-blue-500 font-black'> Linguagens que aprendi em minha carreira como Dev</h1>
 
                     <div className='flex flex-wrap w-auto'>
-                        <div className='flex flex-wrap w-auto'>
+                        {languages.map((language) => (
+                            <div className='flex flex-wrap w-auto'>
                             <div
                                 className="bg-gradient-to-r m-5 from-blue-400 to-indigo-500 rounded-lg overflow-hidden shadow-xl max-w-xs"
                             >
                                 <div className="p-4">
-                                    <h2 className="text-lg font-semibold mb-2 text-white">Java</h2>
+                                    <h2 className="text-lg font-semibold mb-2 text-white">{language.title}</h2>
                                     <p className="text-sm mb-4 text-white">
-                                        Sintaxe Básica, Estruturas de Controle, Classes e Objetos, Herança e Polimorfismo, Encapsulamento, Tratamento de Exceções, Coleções e Generics.
+                                        {language.description}
                                     </p>
                                     <div className="flex justify-end space-x-4">
                                         <button
                                             className="duration-300 bg-black/0 hover:bg-black/25 text-white font-bold py-2 px-4 rounded cursor-default"
                                         >
-                                            Nivel Avançado
+                                            {language.levelOfExperience}
                                         </button>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div className='flex flex-wrap w-auto'>
-                            <div
-                                className="bg-gradient-to-r m-5 from-blue-400 to-indigo-500 rounded-lg overflow-hidden shadow-xl max-w-xs"
-                            >
-                                <div className="p-4">
-                                    <h2 className="text-lg font-semibold mb-2 text-white">Docker</h2>
-                                    <p className="text-sm mb-4 text-white">
-                                        Conceitos Básicos(Contêineres, Imagens), Comandos Básicos( docker run, docker pull, docker build, docker ps, docker rm e docker rmi), Dockerfile e Docker Compose.
-                                    </p>
-                                    <div className="flex justify-end space-x-4">
-                                        <button
-                                            className="duration-300 bg-black/0 hover:bg-black/25 text-white font-bold py-2 px-4 rounded cursor-default"
-                                        >
-                                            Nivel Intermediario
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='flex flex-wrap w-auto'>
-                            <div
-                                className="bg-gradient-to-r m-5 from-blue-400 to-indigo-500 rounded-lg overflow-hidden shadow-xl max-w-xs"
-                            >
-                                <div className="p-4">
-                                    <h2 className="text-lg font-semibold mb-2 text-white">Spring Boot</h2>
-                                    <p className="text-sm mb-4 text-white">
-                                        Inversão de Controle (IoC) e Injeção de Dependências (DI), Configuração do Spring, Spring Beans, Spring Data Access, Spring MVC, Spring Security, Spring REST e Spring Testing.
-                                    </p>
-                                    <div className="flex justify-end space-x-4">
-                                        <button
-                                            className="duration-300 bg-black/0 hover:bg-black/25 text-white font-bold py-2 px-4 rounded cursor-default"
-                                        >
-                                            Nivel Avançado
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='flex flex-wrap w-auto'>
-                            <div
-                                className="bg-gradient-to-r m-5 from-blue-400 to-indigo-500 rounded-lg overflow-hidden shadow-xl max-w-xs"
-                            >
-                                <div className="p-4">
-                                    <h2 className="text-lg font-semibold mb-2 text-white">Postman</h2>
-                                    <p className="text-sm mb-4 text-white">
-                                        ...
-                                    </p>
-                                    <div className="flex justify-end space-x-4">
-                                        <button
-                                            className="duration-300 bg-black/0 hover:bg-black/25 text-white font-bold py-2 px-4 rounded cursor-default"
-                                        >
-                                            Nivel Intermediario
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        ))}
                         
+
                     </div>
                     <hr className='w-3/4  mt-5 mb-5' />
-                    <h1 className='text-3xl pb-3 mx-5 text-blue-500 font-black'>Formação e Cursos</h1>
+                    <h1 className='text-3xl pb-3 mx-5 text-blue-500 font-black'>Tecnologias de Back End Aprendidas</h1>
                     <div className='flex flex-wrap w-auto'>
                         <div className='flex flex-wrap w-auto'>
                             <div
@@ -144,7 +220,6 @@ function Home() {
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </section>
