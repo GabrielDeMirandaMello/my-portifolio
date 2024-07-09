@@ -25,38 +25,33 @@ function Home() {
             levelOfExperience: "Nivel Avançado"
         },
         {
+            title: "Jenkins",
+            description: "Jenkins é um popular servidor de automação de código aberto. Ele é amplamente usado para pipelines de integração contínua e entrega contínua (CI/CD), permitindo que equipes automatizem tarefas como compilação de código, teste e implantação.",
+            levelOfExperience: "NivelBasico"
+        },
+        {
             title: "JWT",
-            description: "",
+            description: "Jason Web Token é muito utilizado na parte de segurança das aplicações, aonde codifica e descodifica as informações do usuario, deixando assim os dados dos usuarios seguro.",
             levelOfExperience: "Nivel Intermediario"
         },
         {
             title: "JUnit",
-            description: "",
+            description: "Utilizado muito para realizar teste de unidade, fazendo com que as menores unidades dos nossos codigo estejam funcionando corretamente.",
             levelOfExperience: "Nivel Intermediario"
         },
         {
             title: "MySql",
-            description: "",
+            description: "Utilizado para gerir bancos de dados, realizar modelagens de dados.",
             levelOfExperience: "Nivel Intermediario"
         },
         {
             title: "PostgreSql",
-            description: "",
+            description: "O PostgreSQL é um poderoso sistema de gerenciamento de banco de dados relacional (RDBMS) de código aberto, conhecido por sua confiabilidade, robustez e conjunto de recursos. ",
             levelOfExperience: "Nivel Intermediario"
         },
         {
             title: "Swagger",
-            description: "",
-            levelOfExperience: "Nivel Intermediario"
-        },
-        {
-            title: "React",
-            description: "Performace, otimização, useState, useEfect, Axios, React icons e React Tailwind.",
-            levelOfExperience: "Nivel Intermediario"
-        },
-        {
-            title: "Tailwind CSS",
-            description: "",
+            description: "Utilizado pela comunidade para realizar a documentação de suas 'Apis' de uma forma mais interressante de visualizar.",
             levelOfExperience: "Nivel Intermediario"
         }
     ]
@@ -88,29 +83,29 @@ function Home() {
         },
         {
             title: "GitFlow",
-            description: "Tags, Master, Hotfix, Release Branch, develop e Feature Branch.",
+            description: "Gitflow é um modelo alternativo de ramificação do Git que consiste no uso de ramificações de recursos e várias ramificações primárias. Exenplo: 'Tags, Master, Hotfix, Release Branch, develop e Feature Branch'.",
             levelOfExperience: "Nivel Avançado"
         }
     ]
     const others = [
         {
             title: "Jira",
-            description: "",
+            description: "Jira é um software popular de gerenciamento de projetos e rastreamento de problemas desenvolvido pela Atlassian. Ele é amplamente usado por equipes de desenvolvimento de software para rastrear bugs, problemas e tarefas ao longo do ciclo de vida do desenvolvimento",
             levelOfExperience: "Nivel Intermediario"
         },
         {
             title: "Bitbucket",
-            description: "",
+            description: "Bitbucket é uma plataforma baseada na web para hospedar e gerenciar repositórios Git. Ele fornece controle de versão usando Git e Mercurial, tornando-se uma escolha popular para equipes de desenvolvimento de software colaborarem em código.",
             levelOfExperience: "Nivel Intermediario"
         },
         {
             title: "Confluence",
-            description: "",
+            description: "O Confluence é uma plataforma de colaboração desenvolvida pela Atlassian, projetada para ajudar equipes a colaborarem e compartilharem conhecimento de maneira eficiente. Ele é usado principalmente para criar e gerenciar documentação, páginas wiki, manuais, e outras formas de conteúdo colaborativo dentro de uma organização.",
             levelOfExperience: "Nivel Intermediario"
         },
         {
             title: "Metodologias Ágeis (Scrum, Kanban)",
-            description: "",
+            description: "Scrum e Kanban são duas metodologias ágeis amplamente utilizadas no desenvolvimento de software e gerenciamento de projetos.",
             levelOfExperience: "Nivel Intermediario"
         }
     ]
@@ -157,7 +152,7 @@ function Home() {
 
                     </div>
                     <hr className='w-11/12  mt-5 mb-5' />
-                    <h1 className='text-3xl pb-3 mx-5 text-blue-500 font-black'>Tecnologias de Back End Aprendidas</h1>
+                    <h1 className='text-3xl pb-3 mx-5 text-blue-500 font-black'>Tecnologias de Back End e Front End Aprendidas</h1>
                     <div className='flex flex-wrap w-11/12'>
                         {backEndTecnologies.map((language) => (
                             <div className='flex flex-wrap w-auto'>
@@ -182,7 +177,7 @@ function Home() {
                         ))}
                     </div>
                     <hr className='w-11/12  mt-5 mb-5' />
-                    <h1 className='text-3xl pb-3 mx-5 text-blue-500 font-black'>Ferramentas Mais Usadas</h1>
+                    <h1 className='text-3xl pb-3 mx-5 text-blue-500 font-black'>Ferramentas Conhecidas</h1>
                     <div className='flex flex-wrap w-auto'>
                         {tools.map((language) => (
                             <div className='flex flex-wrap w-auto'>
