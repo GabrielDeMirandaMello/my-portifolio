@@ -7,7 +7,6 @@ function Projects() {
     return (
         <>
             <Navigation item={'projetos'} />
-            <MdDownloadForOffline onClick={() => { window.location.href = 'https://drive.usercontent.google.com/u/0/uc?id=1vZGB7_9f4v7kufSlqTwogy_lRDZ6oRJY&export=download' }} className='fill-blue-500 fixed bottom-10 right-10 h-16 w-16 cursor-pointer' />
             <section className='container-home mb-20'>
                 <div className='container-conteudo-aboutme '>
                     <div className="bg-transparent py-24">
@@ -69,7 +68,7 @@ function Projects() {
                                         History Travels (Front-End)
                                     </p>
                                     <p class="text-black group-hover:text-white text-sm font-black">
-                                    Este projeto foi feito com o intuito de aprimorar meus conhecimentos, consiste em uma rede social para pessoas que gostam de viajar e compartilhar locais legais. Tecnologias usadas: React.js, HTML5, CSS3 e vercel.app.
+                                        Este projeto foi feito com o intuito de aprimorar meus conhecimentos, consiste em uma rede social para pessoas que gostam de viajar e compartilhar locais legais. Tecnologias usadas: React.js, HTML5, CSS3 e vercel.app.
                                     </p>
                                     <p
                                         class="text-5xl text-black group-hover:text-white font-bold self-end"
@@ -97,7 +96,7 @@ function Projects() {
                                         History Travels (Back-End)
                                     </p>
                                     <p class="text-black group-hover:text-white text-sm font-bold">
-                                    Este projeto foi feito com o intuito de aprimorar meus conhecimentos, consiste em uma rede social para pessoas que gostam de viajar e compartilhar locais legais. Tecnologias e Ferramentas do Back End: Java, Spring Boot, PostgreSQL, Docker, Maven, JUnit, Clean Architecture, JiraSoftware, Render.
+                                        Este projeto foi feito com o intuito de aprimorar meus conhecimentos, consiste em uma rede social para pessoas que gostam de viajar e compartilhar locais legais. Tecnologias e Ferramentas do Back End: Java, Spring Boot, PostgreSQL, Docker, Maven, JUnit, Clean Architecture, JiraSoftware, Render.
                                     </p>
                                     <p
                                         class="text-5xl text-black group-hover:text-white font-bold self-end"
@@ -131,6 +130,10 @@ function Projects() {
                     /> */}
                 </div>
             </section>
+            <MdDownloadForOffline onClick={() => { window.location.href = 'https://drive.usercontent.google.com/u/0/uc?id=1vZGB7_9f4v7kufSlqTwogy_lRDZ6oRJY&export=download' }} className='fill-blue-500 fixed bottom-10 right-10 h-16 w-16 cursor-pointer' />
+            <footer className='w-full flex justify-center'>
+                <h4 className='font-black'>Criado por Gabriel Mello, 2024</h4>
+            </footer>
         </>
     )
 }

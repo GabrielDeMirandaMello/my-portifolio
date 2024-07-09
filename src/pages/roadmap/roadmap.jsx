@@ -34,7 +34,6 @@ function Aboutme() {
     return (
         <>
             <Navigation item={'sobre'} />
-            <MdDownloadForOffline onClick={() => { window.location.href = 'https://drive.usercontent.google.com/u/0/uc?id=1vZGB7_9f4v7kufSlqTwogy_lRDZ6oRJY&export=download' }} className='fill-blue-500 fixed bottom-10 right-10 h-16 w-16 cursor-pointer' />
             <section className='container-home mb-10 object-cover cursor-default'>
                 <div className='container-conteudo-aboutme h-fit pl-6 flex justify-center'>
                     <div className="overflow-hidden bg-transparent sm:py-8">
@@ -72,7 +71,10 @@ function Aboutme() {
                     </div>
                 </div>
             </section>
-
+            <MdDownloadForOffline onClick={() => { window.location.href = 'https://drive.usercontent.google.com/u/0/uc?id=1vZGB7_9f4v7kufSlqTwogy_lRDZ6oRJY&export=download' }} className='fill-blue-500 fixed bottom-10 right-10 h-16 w-16 cursor-pointer' />
+            <footer className='w-full flex justify-center'>
+                <h4 className='font-black'>Criado por Gabriel Mello, 2024</h4>
+            </footer>
         </>
     )
 }

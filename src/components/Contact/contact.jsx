@@ -3,7 +3,7 @@ import React from 'react'
 export default function ContactForm() {
 
     return (
-        <div className="isolate bg-transparent px-6 py-24 sm:py-32 lg:px-1">
+        <div className="isolate bg-transparent px-6 py-5 sm:py-20 lg:px-1">
             <div
                 className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]"
                 aria-hidden="true"
