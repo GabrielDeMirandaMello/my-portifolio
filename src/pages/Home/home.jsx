@@ -115,117 +115,138 @@ function Home() {
             <Navigation item={'pagina inicial'} />
 
             <section className='container-home static mb-10 object-cover'>
-                <div className='container-conteudo h-fit flex justify-start items-start pl-10'>
-                    <h1 className='text-5xl pb-3 mx-5 my-5 text-blue-500 font-black'>Gabriel De Miranda Mello</h1>
-                    <div className='texto-home mx-5 text-lg text-justify w-3/4'>
-                        <p> Olá! Sou <span className='text-blue-500 font-black'>Desenvolvedor Back-End</span> apaixonado por Tecnologia. Estou aqui para compartilhar um pouco sobre mim e as tecnologias que utilizo.
-                            Ao longo dos anos, dediquei-me a aprimorar minhas habilidades e conhecimentos nesse campo, buscando constantemente novos desafios e oportunidades de crescimento.
-                            Convido você a explorar meu portfólio, onde você encontrará uma amostra dos projetos que realizei e das habilidades que possuo.
-                        </p>
-                    </div>
-                    <hr className='w-11/12 mt-5 mb-5' />
-                    <h1 className='text-3xl pb-3 mx-5 text-blue-500 font-black'> Linguagens que aprendi em minha carreira como Dev</h1>
+                <div className='container-conteudo h-fit flex justify-start items-start px-10'>
+                    <div class="bg-transparent w-fit">
+                        <div class="mx-2 py-20 sm:px-6 sm:py-32 lg:px-8">
+                            <div class="w-full relative isolate overflow-hidden bg-gray-900 px-6 pt-16 shadow-2xl sm:rounded-3xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
+                                <svg viewBox="0 0 1024 1024" class="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-y-1/2 [mask-image:radial-gradient(closest-side,white,transparent)] sm:left-full sm:-ml-80 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2 lg:translate-y-0" aria-hidden="true">
+                                    <circle cx="512" cy="512" r="512" fill="url(#759c1415-0410-454c-8f7c-9a820de03641)" fill-opacity="0.7" />
+                                    <defs>
+                                        <radialGradient id="759c1415-0410-454c-8f7c-9a820de03641">
+                                            <stop stop-color="#7775D6" />
+                                            <stop offset="1" stop-color="#E935C1" />
+                                        </radialGradient>
+                                    </defs>
+                                </svg>
+                                <div class="mx-auto text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
+                                    <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Gabriel De Miranda Mello<br /></h2>
+                                    <p class="mt-6 text-lg leading-8 text-gray-300">
+                                        Olá! Sou <span className='text-blue-500 font-black'>Desenvolvedor Back-End</span> apaixonado por Tecnologia. Estou aqui para compartilhar um pouco sobre mim e as tecnologias que utilizo.
+                                        Ao longo dos anos, dediquei-me a aprimorar minhas habilidades e conhecimentos nesse campo, buscando constantemente novos desafios e oportunidades de crescimento.
+                                        Convido você a explorar meu portfólio, onde você encontrará uma amostra dos projetos que realizei e das habilidades que possuo.
+                                    </p>
+                                    <div class="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
+                                        <a href="#" class="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Tecnologias</a>
+                                        <a href="#" class="text-sm font-semibold leading-6 text-white">Projetos <span aria-hidden="true">→</span></a>
+                                    </div>
+                                    <hr className='w-11/12 mt-5 mb-5' />
+                                    <h1 className='text-3xl pb-3 mx-5 text-blue-500 font-black'> Linguagens que aprendi em minha carreira como Dev</h1>
 
-                    <div className='flex flex-wrap w-3/4'>
-                        {languages.map((language) => (
-                            <div className='flex flex-wrap w-auto'>
-                                <div
-                                    className="bg-gradient-to-r m-5 from-blue-400 to-indigo-500 rounded-lg overflow-hidden shadow-xl max-w-xs"
-                                >
-                                    <div className="p-4">
-                                        <h2 className="text-lg font-semibold mb-2 text-white">{language.title}</h2>
-                                        <p className="text-sm mb-4 text-white">
-                                            {language.description}
-                                        </p>
-                                        <div className="flex justify-end space-x-4">
-                                            <button
-                                                className="duration-300 bg-black/0 hover:bg-black/25 text-white font-bold py-2 px-4 rounded cursor-default"
-                                            >
-                                                {language.levelOfExperience}
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        ))}
+                                    <div className='flex flex-wrap w-3/4'>
+                                        {languages.map((language) => (
+                                            <div className='flex flex-wrap w-auto'>
+                                                <div
+                                                    className="bg-gradient-to-r m-5 from-blue-400 to-indigo-500 rounded-lg overflow-hidden shadow-xl max-w-xs"
+                                                >
+                                                    <div className="p-4">
+                                                        <h2 className="text-lg font-semibold mb-2 text-white">{language.title}</h2>
+                                                        <p className="text-sm mb-4 text-white">
+                                                            {language.description}
+                                                        </p>
+                                                        <div className="flex justify-end space-x-4">
+                                                            <button
+                                                                className="duration-300 bg-black/0 hover:bg-black/25 text-white font-bold py-2 px-4 rounded cursor-default"
+                                                            >
+                                                                {language.levelOfExperience}
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        ))}
 
 
-                    </div>
-                    <hr className='w-11/12  mt-5 mb-5' />
-                    <h1 className='text-3xl pb-3 mx-5 text-blue-500 font-black'>Tecnologias de Back End e Front End Aprendidas</h1>
-                    <div className='flex flex-wrap w-11/12'>
-                        {backEndTecnologies.map((language) => (
-                            <div className='flex flex-wrap w-auto'>
-                                <div
-                                    className="bg-gradient-to-r m-5 from-blue-400 to-indigo-500 rounded-lg overflow-hidden shadow-xl max-w-xs"
-                                >
-                                    <div className="p-4">
-                                        <h2 className="text-lg font-semibold mb-2 text-white">{language.title}</h2>
-                                        <p className="text-sm mb-4 text-white">
-                                            {language.description}
-                                        </p>
-                                        <div className="flex justify-end space-x-4">
-                                            <button
-                                                className="duration-300 bg-black/0 hover:bg-black/25 text-white font-bold py-2 px-4 rounded cursor-default"
-                                            >
-                                                {language.levelOfExperience}
-                                            </button>
-                                        </div>
+                                    </div>
+                                    <hr className='w-11/12  mt-5 mb-5' />
+                                    <h1 className='text-3xl pb-3 mx-5 text-blue-500 font-black'>Tecnologias de Back End e Front End Aprendidas</h1>
+                                    <div className='flex flex-wrap w-11/12'>
+                                        {backEndTecnologies.map((language) => (
+                                            <div className='flex flex-wrap w-auto'>
+                                                <div
+                                                    className="bg-gradient-to-r m-5 from-blue-400 to-indigo-500 rounded-lg overflow-hidden shadow-xl max-w-xs"
+                                                >
+                                                    <div className="p-4">
+                                                        <h2 className="text-lg font-semibold mb-2 text-white">{language.title}</h2>
+                                                        <p className="text-sm mb-4 text-white">
+                                                            {language.description}
+                                                        </p>
+                                                        <div className="flex justify-end space-x-4">
+                                                            <button
+                                                                className="duration-300 bg-black/0 hover:bg-black/25 text-white font-bold py-2 px-4 rounded cursor-default"
+                                                            >
+                                                                {language.levelOfExperience}
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        ))}
+                                    </div>
+                                    <hr className='w-11/12  mt-5 mb-5' />
+                                    <h1 className='text-3xl pb-3 mx-5 text-blue-500 font-black'>Ferramentas Conhecidas</h1>
+                                    <div className='flex flex-wrap w-auto'>
+                                        {tools.map((language) => (
+                                            <div className='flex flex-wrap w-auto'>
+                                                <div
+                                                    className="bg-gradient-to-r m-5 from-blue-400 to-indigo-500 rounded-lg overflow-hidden shadow-xl max-w-xs"
+                                                >
+                                                    <div className="p-4">
+                                                        <h2 className="text-lg font-semibold mb-2 text-white">{language.title}</h2>
+                                                        <p className="text-sm mb-4 text-white">
+                                                            {language.description}
+                                                        </p>
+                                                        <div className="flex justify-end space-x-4">
+                                                            <button
+                                                                className="duration-300 bg-black/0 hover:bg-black/25 text-white font-bold py-2 px-4 rounded cursor-default"
+                                                            >
+                                                                {language.levelOfExperience}
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        ))}
+                                    </div>
+                                    <hr className='w-11/12  mt-5 mb-5' />
+                                    <h1 className='text-3xl pb-3 mx-5 text-blue-500 font-black'>Outras Ferramentas</h1>
+                                    <div className='flex flex-wrap w-auto'>
+                                        {others.map((language) => (
+                                            <div className='flex flex-wrap w-auto'>
+                                                <div
+                                                    className="bg-gradient-to-r m-5 from-blue-400 to-indigo-500 rounded-lg overflow-hidden shadow-xl max-w-xs"
+                                                >
+                                                    <div className="p-4">
+                                                        <h2 className="text-lg font-semibold mb-2 text-white">{language.title}</h2>
+                                                        <p className="text-sm mb-4 text-white">
+                                                            {language.description}
+                                                        </p>
+                                                        <div className="flex justify-end space-x-4">
+                                                            <button
+                                                                className="duration-300 bg-black/0 hover:bg-black/25 text-white font-bold py-2 px-4 rounded cursor-default"
+                                                            >
+                                                                {language.levelOfExperience}
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        ))}
                                     </div>
                                 </div>
                             </div>
-                        ))}
+                        </div>
                     </div>
-                    <hr className='w-11/12  mt-5 mb-5' />
-                    <h1 className='text-3xl pb-3 mx-5 text-blue-500 font-black'>Ferramentas Conhecidas</h1>
-                    <div className='flex flex-wrap w-auto'>
-                        {tools.map((language) => (
-                            <div className='flex flex-wrap w-auto'>
-                                <div
-                                    className="bg-gradient-to-r m-5 from-blue-400 to-indigo-500 rounded-lg overflow-hidden shadow-xl max-w-xs"
-                                >
-                                    <div className="p-4">
-                                        <h2 className="text-lg font-semibold mb-2 text-white">{language.title}</h2>
-                                        <p className="text-sm mb-4 text-white">
-                                            {language.description}
-                                        </p>
-                                        <div className="flex justify-end space-x-4">
-                                            <button
-                                                className="duration-300 bg-black/0 hover:bg-black/25 text-white font-bold py-2 px-4 rounded cursor-default"
-                                            >
-                                                {language.levelOfExperience}
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                    <hr className='w-11/12  mt-5 mb-5' />
-                    <h1 className='text-3xl pb-3 mx-5 text-blue-500 font-black'>Outras Ferramentas</h1>
-                    <div className='flex flex-wrap w-auto'>
-                        {others.map((language) => (
-                            <div className='flex flex-wrap w-auto'>
-                                <div
-                                    className="bg-gradient-to-r m-5 from-blue-400 to-indigo-500 rounded-lg overflow-hidden shadow-xl max-w-xs"
-                                >
-                                    <div className="p-4">
-                                        <h2 className="text-lg font-semibold mb-2 text-white">{language.title}</h2>
-                                        <p className="text-sm mb-4 text-white">
-                                            {language.description}
-                                        </p>
-                                        <div className="flex justify-end space-x-4">
-                                            <button
-                                                className="duration-300 bg-black/0 hover:bg-black/25 text-white font-bold py-2 px-4 rounded cursor-default"
-                                            >
-                                                {language.levelOfExperience}
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
+
                 </div>
             </section>
             <MdDownloadForOffline onClick={() => { window.location.href = 'https://drive.usercontent.google.com/u/0/uc?id=1vZGB7_9f4v7kufSlqTwogy_lRDZ6oRJY&export=download' }} className='fill-blue-500 fixed bottom-10 right-10 h-16 w-16 cursor-pointer' />

@@ -1,6 +1,61 @@
-import React from 'react'
+import React, { useState } from 'react'
+import emailjs from '@emailjs/browser';
+import Swal from 'sweetalert2'
 
 export default function ContactForm() {
+    const [subject, setSubject] = useState('Mensagem do Portifólio');
+
+    const [formData, setFormData] = useState({
+        email: '',
+        mensagem: ''
+      });
+    
+      const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData({
+          ...formData,
+          [name]: value
+        });
+      };
+
+    const Toast = Swal.mixin({
+        toast: true,
+        position: "bottom-end",
+        showConfirmButton: false,
+        timer: 3000,
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.onmouseenter = Swal.stopTimer;
+            toast.onmouseleave = Swal.resumeTimer;
+        }
+    });
+
+    const sendEmail = (e) => {
+        
+        const serviceId = 'service_xownue3';
+        const templateId = 'template_g7r0cbi';
+        const userId = 'hxMhd5xnStIDc_3xG';
+        const templateParams = {
+            from_name: formData.email,
+            assunto: subject,
+            message: formData.mensagem
+        };
+        emailjs.send(serviceId, templateId, templateParams, userId)
+            .then(() => {
+                Toast.fire({
+                    icon: "success",
+                    title: "E-mail Enviado !"
+                });
+                setSubject('');
+            }, (error) => {
+                console.error('Erro ao enviar o email:', error);
+            }).catch((error) => {
+                Toast.fire({
+                    icon: "success",
+                    title: error
+                });
+            });
+    };
 
     return (
         <div className="isolate bg-transparent px-6 py-5 sm:py-20 lg:px-1">
@@ -30,6 +85,7 @@ export default function ContactForm() {
                         </label>
                         <div className="mt-2.5">
                             <input
+                                onChange={handleChange}
                                 type="text"
                                 name="company"
                                 id="company"
@@ -44,6 +100,7 @@ export default function ContactForm() {
                         </label>
                         <div className="mt-2.5">
                             <textarea
+                                onChange={handleChange}
                                 name="message"
                                 id="message"
                                 rows={4}
@@ -56,7 +113,7 @@ export default function ContactForm() {
                 </div>
                 <div className="mt-10">
                     <button
-                        type="submit"
+                        onClick={sendEmail}
                         className="block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                     >
                         Vamos conversar
