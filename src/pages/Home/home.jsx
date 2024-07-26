@@ -2,7 +2,8 @@ import React from 'react';
 import "./home.css";
 import Navigation from '../../components/Navigation/navigation'
 import { MdDownloadForOffline } from "react-icons/md";
-import Card from "../../components/Card/card";
+import Card from "../../components/Card/card"
+import SpeedDial from "../../components/SpeedDial/speeddial"
 import Image from "../../assets/tecnologies/img_java.jpeg"
 
 function Home() {
@@ -115,7 +116,6 @@ function Home() {
     return (
         <>
             <Navigation item={'pagina inicial'} />
-
             <section className='container-home static mb-10 object-cover'>
                 <div className='container-conteudo h-fit px-10'>
                     <div class="bg-transparent w-fit">
@@ -144,13 +144,41 @@ function Home() {
                                     <hr className='w-11/12 mt-5 mb-5' />
                                     <h1 className='text-3xl pb-3 my-10 text-blue-500 font-black'> Linguagens que aprendi como Desenvolvedor Back-End</h1>
 
-                                    <div className='flex flex-wrap w-3/4' />
+                                    <div className='flex flex-wrap w-full' />
 
-                                    <Card
-                                        img={Image}
-                                        name={"Java"}
-                                        description={"Sintaxe Básica, Estruturas de Controle, Classes e Objetos, Herança e Polimorfismo, Encapsulamento, Tratamento de Exceções, Coleções e Generics."}
-                                    />
+                                    <section className='flex gap-5 flex-wrap w-3/4'>
+                                        <Card
+                                            sx={{margin:'0px 20px'}}
+                                            img={Image}
+                                            name={"Java"}
+                                            description={"Sintaxe Básica, Estruturas de Controle, Classes e Objetos, Herança e Polimorfismo, Encapsulamento, Tratamento de Exceções, Coleções e Generics."}
+                                        />
+                                        <Card
+                                            img={Image}
+                                            name={"Java"}
+                                            description={"Sintaxe Básica, Estruturas de Controle, Classes e Objetos, Herança e Polimorfismo, Encapsulamento, Tratamento de Exceções, Coleções e Generics."}
+                                        />
+                                        <Card
+                                            img={Image}
+                                            name={"Java"}
+                                            description={"Sintaxe Básica, Estruturas de Controle, Classes e Objetos, Herança e Polimorfismo, Encapsulamento, Tratamento de Exceções, Coleções e Generics."}
+                                        />
+                                        <Card
+                                            img={Image}
+                                            name={"Java"}
+                                            description={"Sintaxe Básica, Estruturas de Controle, Classes e Objetos, Herança e Polimorfismo, Encapsulamento, Tratamento de Exceções, Coleções e Generics."}
+                                        />
+                                        <Card
+                                            img={Image}
+                                            name={"Java"}
+                                            description={"Sintaxe Básica, Estruturas de Controle, Classes e Objetos, Herança e Polimorfismo, Encapsulamento, Tratamento de Exceções, Coleções e Generics."}
+                                        />
+                                        <Card
+                                            img={Image}
+                                            name={"Java"}
+                                            description={"Sintaxe Básica, Estruturas de Controle, Classes e Objetos, Herança e Polimorfismo, Encapsulamento, Tratamento de Exceções, Coleções e Generics."}
+                                        />
+                                    </section>
                                 </div>
                             </div>
                         </div>
