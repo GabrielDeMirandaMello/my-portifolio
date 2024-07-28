@@ -2,9 +2,7 @@ import React from 'react';
 import "./home.css";
 import Navigation from '../../components/Navigation/navigation'
 import { MdDownloadForOffline } from "react-icons/md";
-import Card from "../../components/Card/card"
 import SpeedDial from "../../components/SpeedDial/speeddial"
-import Image from "../../assets/tecnologies/img_java.jpeg"
 
 function Home() {
 
@@ -131,6 +129,7 @@ function Home() {
                                     </defs>
                                 </svg>
                                 <div class="mx-auto flex flex-col items-center  text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
+                                    <img src="" alt="" />
                                     <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Gabriel De Miranda Mello<br /></h2>
                                     <p class="mt-6 text-lg leading-8 text-gray-300">
                                         Olá! Sou <span className='text-blue-500 font-black'>Desenvolvedor Back-End</span> apaixonado por Tecnologia. Estou aqui para compartilhar um pouco sobre mim e as tecnologias que utilizo.
@@ -146,39 +145,8 @@ function Home() {
 
                                     <div className='flex flex-wrap w-full' />
 
-                                    <section className='flex gap-5 flex-wrap w-3/4'>
-                                        <Card
-                                            sx={{margin:'0px 20px'}}
-                                            img={Image}
-                                            name={"Java"}
-                                            description={"Sintaxe Básica, Estruturas de Controle, Classes e Objetos, Herança e Polimorfismo, Encapsulamento, Tratamento de Exceções, Coleções e Generics."}
-                                        />
-                                        <Card
-                                            img={Image}
-                                            name={"Java"}
-                                            description={"Sintaxe Básica, Estruturas de Controle, Classes e Objetos, Herança e Polimorfismo, Encapsulamento, Tratamento de Exceções, Coleções e Generics."}
-                                        />
-                                        <Card
-                                            img={Image}
-                                            name={"Java"}
-                                            description={"Sintaxe Básica, Estruturas de Controle, Classes e Objetos, Herança e Polimorfismo, Encapsulamento, Tratamento de Exceções, Coleções e Generics."}
-                                        />
-                                        <Card
-                                            img={Image}
-                                            name={"Java"}
-                                            description={"Sintaxe Básica, Estruturas de Controle, Classes e Objetos, Herança e Polimorfismo, Encapsulamento, Tratamento de Exceções, Coleções e Generics."}
-                                        />
-                                        <Card
-                                            img={Image}
-                                            name={"Java"}
-                                            description={"Sintaxe Básica, Estruturas de Controle, Classes e Objetos, Herança e Polimorfismo, Encapsulamento, Tratamento de Exceções, Coleções e Generics."}
-                                        />
-                                        <Card
-                                            img={Image}
-                                            name={"Java"}
-                                            description={"Sintaxe Básica, Estruturas de Controle, Classes e Objetos, Herança e Polimorfismo, Encapsulamento, Tratamento de Exceções, Coleções e Generics."}
-                                        />
-                                    </section>
+                                    
+                                    <SpeedDial />
                                 </div>
                             </div>
                         </div>

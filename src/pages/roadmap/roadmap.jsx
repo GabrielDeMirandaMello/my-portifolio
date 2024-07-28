@@ -103,6 +103,7 @@ function Aboutme() {
                                 <img
                                     src={ImagemFormacao}
                                     alt="Product screenshot"
+                                    loading="lazy"
                                     className="hidden sm:flex h-auto max-w-none rounded-xl sm:w-[30rem] md:-ml-4 lg:-ml-0"
                                 />
                                 <div className="lg:pr-8 lg:pt-4">
