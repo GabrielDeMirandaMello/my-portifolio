@@ -3,43 +3,20 @@ import "./home.css";
 import Navigation from '../../components/Navigation/navigation'
 import { MdDownloadForOffline } from "react-icons/md";
 import SpeedDial from "../../components/SpeedDial/speeddial"
+import JavaImage from "../../assets/tecnologies/img_java.jpeg"
+import SpringBoot from "../../assets/tecnologies/springBoot.png"
+import JasonWebToken from "../../assets/tecnologies/jwt_icon.png"
+import JUnit from "../../assets/tecnologies/JUnit5.png"
+import Mysql from "../../assets/tecnologies/mysql.webp"
+import PostgreSQL from "../../assets/tecnologies/postgresql.webp"
+import Swagger from "../../assets/tecnologies/swagger.jpeg"
+import Docker from "../../assets/tecnologies/docker.webp"
+import ApacheKafka from "../../assets/tecnologies/apache_kafka.webp"
+import AWSEC2 from "../../assets/tecnologies/aws_ec2.png"
 
 function Home() {
 
-    const languages = [
-        {
-            title: "Java",
-            description: "Sintaxe Básica, Estruturas de Controle, Classes e Objetos, Herança e Polimorfismo, Encapsulamento, Tratamento de Exceções, Coleções e Generics.",
-            levelOfExperience: "Nivel Avançado"
-        },
-        {
-            title: "JavaScript",
-            description: "Variáveis e Tipos de Dados, Funções, Objetos e Protótipos, Escopo, Closure, Eventos, Assincronia e Manipulação do DOM",
-            levelOfExperience: "Nivel Intermediario"
-        }
-    ]
-
     const backEndTecnologies = [
-        {
-            title: "Spring Boot",
-            description: "Inversão de Controle (IoC) e Injeção de Dependências (DI), Configuração do Spring, Spring Beans, Spring Data Access, Spring MVC, Spring Security, Spring REST e Spring Testing.",
-            levelOfExperience: "Nivel Avançado"
-        },
-        {
-            title: "Jenkins",
-            description: "Jenkins é um popular servidor de automação de código aberto. Ele é amplamente usado para pipelines de integração contínua e entrega contínua (CI/CD), permitindo que equipes automatizem tarefas como compilação de código, teste e implantação.",
-            levelOfExperience: "NivelBasico"
-        },
-        {
-            title: "JWT",
-            description: "Jason Web Token é muito utilizado na parte de segurança das aplicações, aonde codifica e descodifica as informações do usuario, deixando assim os dados dos usuarios seguro.",
-            levelOfExperience: "Nivel Intermediario"
-        },
-        {
-            title: "JUnit",
-            description: "Utilizado muito para realizar teste de unidade, fazendo com que as menores unidades dos nossos codigo estejam funcionando corretamente.",
-            levelOfExperience: "Nivel Intermediario"
-        },
         {
             title: "MySql",
             description: "Utilizado para gerir bancos de dados, realizar modelagens de dados.",
@@ -145,8 +122,59 @@ function Home() {
 
                                     <div className='flex flex-wrap w-full' />
 
-                                    
-                                    <SpeedDial />
+                                    <section className='flex flex-wrap gap-8 pl-3 w-full h-96 overflow-y-auto rounded-2xl scroll-smooth'>
+                                        <SpeedDial
+                                            img={JavaImage}
+                                            name="Java 11 e 17"
+                                            description="Nivel Intermediario"
+                                        />
+                                        <SpeedDial
+                                            img={SpringBoot}
+                                            name="Spring Boot"
+                                            description="Nivel Avançado"
+                                        />
+                                        <SpeedDial
+                                            img={JUnit}
+                                            name="JUnit"
+                                            description="Nivel Intermediario"
+                                        />
+                                        <SpeedDial
+                                            img={JasonWebToken}
+                                            name="Jason Web Token"
+                                            description="Nivel Avançado"
+                                        />
+                                        <SpeedDial
+                                            img={Mysql}
+                                            name="MySQL"
+                                            description="Nivel Avançado"
+                                        />
+                                        <SpeedDial
+                                            img={PostgreSQL}
+                                            name="PostgreSql"
+                                            description="Nivel Avançado"
+                                        />
+                                        <SpeedDial
+                                            img={Swagger}
+                                            name="Swagger"
+                                            description="Nivel Intermediario"
+                                        />
+                                        <SpeedDial
+                                            img={Docker}
+                                            name="Docker"
+                                            description="Nivel Avançado"
+                                        />
+                                        <SpeedDial
+                                            img={ApacheKafka}
+                                            name="Apache Kafka"
+                                            description="Nivel Basico"
+                                        />
+                                        <SpeedDial
+                                            img={AWSEC2}
+                                            name="AWS EC2"
+                                            description="Nivel Intermediario"
+                                        />
+                                    </section>
+
                                 </div>
                             </div>
                         </div>
