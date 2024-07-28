@@ -1,8 +1,9 @@
 import React from 'react';
 import "./home.css";
 import Navigation from '../../components/Navigation/navigation'
-import { MdDownloadForOffline } from "react-icons/md";
+import { useNavigate } from 'react-router-dom';
 import SpeedDial from "../../components/SpeedDial/speeddial"
+import Speed from "../../components/Speed/speed"
 import JavaImage from "../../assets/tecnologies/img_java.jpeg"
 import SpringBoot from "../../assets/tecnologies/springBoot.png"
 import JasonWebToken from "../../assets/tecnologies/jwt_icon.png"
@@ -15,56 +16,8 @@ import ApacheKafka from "../../assets/tecnologies/apache_kafka.webp"
 import AWSEC2 from "../../assets/tecnologies/aws_ec2.png"
 
 function Home() {
+    const navigate = useNavigate()
 
-    const backEndTecnologies = [
-        {
-            title: "MySql",
-            description: "Utilizado para gerir bancos de dados, realizar modelagens de dados.",
-            levelOfExperience: "Nivel Intermediario"
-        },
-        {
-            title: "PostgreSql",
-            description: "O PostgreSQL é um poderoso sistema de gerenciamento de banco de dados relacional (RDBMS) de código aberto, conhecido por sua confiabilidade, robustez e conjunto de recursos. ",
-            levelOfExperience: "Nivel Intermediario"
-        },
-        {
-            title: "Swagger",
-            description: "Utilizado pela comunidade para realizar a documentação de suas 'Apis' de uma forma mais interressante de visualizar.",
-            levelOfExperience: "Nivel Intermediario"
-        }
-    ]
-    const tools = [
-        {
-            title: "Docker",
-            description: "Docker é uma plataforma popular para desenvolver, enviar e executar aplicativos usando containerização. Conceitos Básicos(Contêineres, Imagens), Comandos Básicos( docker run, docker pull, docker build, docker ps, docker rm e docker rmi), Dockerfile e Docker Compose.",
-            levelOfExperience: "Nivel Intermediario"
-        },
-        {
-            title: "AWS",
-            description: "AWS, ou Amazon Web Services, é uma plataforma de computação em nuvem abrangente e amplamente usada oferecida pela Amazon. Ela fornece uma ampla gama de serviços em nuvem, incluindo poder de computação, armazenamento, bancos de dados, aprendizado de máquina, análise, rede e muito mais. Criação de maquinas EC2 e atraves desta maquina conseguir subir uma aplicação completa.",
-            levelOfExperience: "Nivel Basico"
-        },
-        {
-            title: "Apache Kafka",
-            description: "Apache Kafka é uma plataforma de software de processamento de fluxo de código aberto desenvolvida pela Apache Software Foundation, escrita em Scala e Java. Ela visa fornecer uma plataforma unificada, de alto rendimento e baixa latência para lidar com feeds de dados em tempo real.",
-            levelOfExperience: "Nivel Intermediario"
-        },
-        {
-            title: "Minio",
-            description: "O MinIO é um sistema de armazenamento de objetos de alto desempenho e código aberto. Ele é compatível com o serviço de armazenamento em nuvem Amazon S3 e foi projetado para aplicativos nativos da nuvem, oferecendo recursos como escalabilidade, multilocação e resiliência.",
-            levelOfExperience: "Nivel Intermediario"
-        },
-        {
-            title: "DBeaver",
-            description: "O DBeaver é uma ferramenta de banco de dados universal gratuita e de código aberto para desenvolvedores, programadores SQL, administradores de banco de dados e analistas. Ele suporta vários bancos de dados, incluindo MySQL, PostgreSQL, SQLite, Oracle, DB2, SQL Server, Sybase, MS Access, Teradata, Firebird, Apache Hive, Phoenix e muitos mais.",
-            levelOfExperience: "Nivel Intermediario"
-        },
-        {
-            title: "GitFlow",
-            description: "Gitflow é um modelo alternativo de ramificação do Git que consiste no uso de ramificações de recursos e várias ramificações primárias. Exenplo: 'Tags, Master, Hotfix, Release Branch, develop e Feature Branch'.",
-            levelOfExperience: "Nivel Avançado"
-        }
-    ]
     const others = [
         {
             title: "Jira",
@@ -114,8 +67,8 @@ function Home() {
                                         Convido você a explorar meu portfólio, onde você encontrará uma amostra dos projetos que realizei e das habilidades que possuo.
                                     </p>
                                     <div class="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
-                                        <a href="#" class="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Tecnologias</a>
-                                        <a href="#" class="text-sm font-semibold leading-6 text-white">Projetos <span aria-hidden="true">→</span></a>
+                                        <a onClick={() => navigate('/projects')} class="cursor-pointer rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Estudos</a>
+                                        <a onClick={() => navigate('/roadmap')} class="cursor-pointer text-sm font-semibold leading-6 text-white">Projetos <span aria-hidden="true">→</span></a>
                                     </div>
                                     <hr className='w-11/12 mt-5 mb-5' />
                                     <h1 className='text-3xl pb-3 my-10 text-blue-500 font-black'> Linguagens que aprendi como Desenvolvedor Back-End</h1>
@@ -182,9 +135,9 @@ function Home() {
 
                 </div>
             </section>
-            <MdDownloadForOffline onClick={() => { window.location.href = 'https://drive.usercontent.google.com/u/0/uc?id=1vZGB7_9f4v7kufSlqTwogy_lRDZ6oRJY&export=download' }} className='fill-blue-500 fixed bottom-10 right-10 h-16 w-16 cursor-pointer' />
+            <Speed />
             <footer className='w-full flex justify-center'>
-                <h4 className='font-black'>Criado por Gabriel Mello, 2024</h4>
+                <h4 className='font-black'>&copy; Gabriel Mello, 2024</h4>
             </footer>
         </>
     )

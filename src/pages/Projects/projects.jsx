@@ -1,6 +1,6 @@
 import React from 'react';
 import Navigation from '../../components/Navigation/navigation'
-import { MdDownloadForOffline } from "react-icons/md";
+import Speed from "../../components/Speed/speed"
 
 function Projects() {
 
@@ -107,32 +107,11 @@ function Projects() {
                             </div>
                         </div>
                     </div>
-                    {/* <Card 
-                    title={'History Travels (Front-End)'}
-                    description={''}
-                    period={'Periodo: Janeiro de 2024 à Março de 2024'}
-                    github={'true'}
-                    link={'https://github.com/GabrielDeMirandaMello/NewIndividualProjectFrontEnd'}
-                    />
-                    <Card 
-                    title={'History Travels (Back-End)'}
-                    description={'Este projeto foi feito com o intuito de aprimorar meus conhecimentos, consiste em uma rede social para pessoas que gostam de viajar e poder compartilhar locais com as pessoas e somente compartilhar as viajens. Tecnologias e Ferramentas usadas no Back End: Java, Spring Boot, PostgreSQL, Docker, Maven, JUnit, Clean Architecture, JiraSoftware, Render.'}
-                    period={'Periodo: Periodo: Janeiro de 2024 à Março de 2024'}
-                    github={'true'}
-                    link={'https://github.com/GabrielDeMirandaMello/NewIndividualProjectBackEnd'}
-                    />
-                    <Card 
-                    title={'Cross Game (Faculdade)'}
-                    description={'Pequena descrição das tecnologias usadas.'}
-                    period={'Periodo: Janeiro de 2022 à Dezembro de 2023'}
-                    github={'true'}
-                    link={'https://github.com/orgs/Cross-Game/repositories'}
-                    /> */}
                 </div>
             </section>
-            <MdDownloadForOffline onClick={() => { window.location.href = 'https://drive.usercontent.google.com/u/0/uc?id=1vZGB7_9f4v7kufSlqTwogy_lRDZ6oRJY&export=download' }} className='fill-blue-500 fixed bottom-10 right-10 h-16 w-16 cursor-pointer' />
+            <Speed />
             <footer className='w-full flex justify-center'>
-                <h4 className='font-black'>Criado por Gabriel Mello, 2024</h4>
+                <h4 className='font-black'>&copy; Gabriel Mello, 2024</h4>
             </footer>
         </>
     )

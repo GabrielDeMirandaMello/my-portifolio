@@ -3,9 +3,10 @@ import "./contact.css";
 import Navigation from '../../components/Navigation/navigation'
 import ContactForm from "../../components/Contact/contact"
 import { MdDownloadForOffline } from "react-icons/md";
+import Speed from "../../components/Speed/speed"
 
 function Contact() {
-    
+
 
     return (
         <>
@@ -35,9 +36,9 @@ function Contact() {
                     </div>
                 </div>
             </section>
-            <MdDownloadForOffline onClick={() => { window.location.href = 'https://drive.usercontent.google.com/u/0/uc?id=1vZGB7_9f4v7kufSlqTwogy_lRDZ6oRJY&export=download' }} className='fill-blue-500 fixed bottom-10 right-10 h-16 w-16 cursor-pointer' />
+            <Speed />
             <footer className='w-full flex justify-center'>
-                <h4 className='font-black'>Criado por Gabriel Mello, 2024</h4>
+                <h4 className='font-black'>&copy; Gabriel Mello, 2024</h4>
             </footer>
         </>
     )
