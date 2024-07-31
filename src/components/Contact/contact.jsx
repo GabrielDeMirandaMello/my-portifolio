@@ -1,22 +1,10 @@
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
 import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2'
 
 export default function ContactForm() {
-    const [subject, setSubject] = useState('Mensagem do Portifólio');
-
-    const [formData, setFormData] = useState({
-        email: '',
-        mensagem: ''
-      });
-    
-      const handleChange = (e) => {
-        const { name, value } = e.target;
-        setFormData({
-          ...formData,
-          [name]: value
-        });
-      };
+    const [subject] = useState('Mensagem do Portifólio');
+    const form = useRef();
 
     const Toast = Swal.mixin({
         toast: true,
@@ -31,32 +19,28 @@ export default function ContactForm() {
     });
 
     const sendEmail = (e) => {
+        e.preventDefault();
         
-        const serviceId = 'service_xownue3';
-        const templateId = 'template_g7r0cbi';
-        const userId = 'hxMhd5xnStIDc_3xG';
-        const templateParams = {
-            from_name: formData.email,
-            assunto: subject,
-            message: formData.mensagem
-        };
-        emailjs.send(serviceId, templateId, templateParams, userId)
-            .then(() => {
+        emailjs
+          .sendForm('service_xownue3', 'template_g7r0cbi', form.current, {
+            publicKey: 'hxMhd5xnStIDc_3xG',
+          })
+          .then(
+            () => {
                 Toast.fire({
                     icon: "success",
                     title: "E-mail Enviado !"
                 });
-                setSubject('');
-            }, (error) => {
-                console.error('Erro ao enviar o email:', error);
-            }).catch((error) => {
+                
+            },
+            (error) => {
                 Toast.fire({
-                    icon: "success",
+                    icon: "error",
                     title: error
                 });
-            });
-    };
-
+            },
+          );
+      };
     return (
         <div className="isolate bg-transparent px-6 py-5 sm:py-20 lg:px-1">
             <div
@@ -77,30 +61,29 @@ export default function ContactForm() {
                     Entre em contato para mais informações, orçamentos e oportunidades.
                 </p>
             </div>
-            <form action="#" method="POST" className="mx-auto mt-10 max-w-xl sm:mt-10">
+            <form ref={form} onSubmit={sendEmail} className="mx-auto mt-10 max-w-xl sm:mt-10">
                 <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
                     <div className="sm:col-span-2">
-                        <label htmlFor="company" className="block text-base font-black leading-6 text-white">
+                        <label htmlFor="from_name" className="block text-base font-black leading-6 text-white">
                             E-mail
                         </label>
                         <div className="mt-2.5">
                             <input
-                                onChange={handleChange}
                                 type="text"
-                                name="company"
-                                id="company"
+                                name="from_name"
+                                id="from_name"
                                 autoComplete="organization"
                                 className="block w-full rounded-md border-0 px-3.5 py-2 text-black font-black shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-black focus:ring-2 focus:ring-inset focus:ring-blue-500 sm:text-lg sm:leading-6"
                             />
                         </div>
                     </div>
+                    <input type="text" name='assunto' id='assunto' value={subject} style={{display: 'none'}} />
                     <div className="sm:col-span-2">
                         <label htmlFor="message" className="block text-base leading-6 font-black text-white">
                             Mensagem
                         </label>
                         <div className="mt-2.5">
                             <textarea
-                                onChange={handleChange}
                                 name="message"
                                 id="message"
                                 rows={4}

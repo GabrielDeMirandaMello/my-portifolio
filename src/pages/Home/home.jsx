@@ -67,8 +67,8 @@ function Home() {
                                         Convido você a explorar meu portfólio, onde você encontrará uma amostra dos projetos que realizei e das habilidades que possuo.
                                     </p>
                                     <div class="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
-                                        <a onClick={() => navigate('/projects')} class="cursor-pointer rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Estudos</a>
-                                        <a onClick={() => navigate('/roadmap')} class="cursor-pointer text-sm font-semibold leading-6 text-white">Projetos <span aria-hidden="true">→</span></a>
+                                        <a onClick={() => navigate('/roadmap')} class="cursor-pointer rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Estudos</a>
+                                        <a onClick={() => navigate('/projects')} class="cursor-pointer text-sm font-semibold leading-6 text-white">Projetos <span aria-hidden="true">→</span></a>
                                     </div>
                                     <hr className='w-11/12 mt-5 mb-5' />
                                     <h1 className='text-3xl pb-3 my-10 text-blue-500 font-black'> Linguagens que aprendi como Desenvolvedor Back-End</h1>
