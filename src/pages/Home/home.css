@@ -25,6 +25,10 @@ body::-webkit-scrollbar-thumb,
   display: none;
 }
 
+.noScroll::-webkit-scrollbar {
+  display: none;
+}
+
 /* .container-home {
   display: flex;
   border: 1px solid #007FFF;

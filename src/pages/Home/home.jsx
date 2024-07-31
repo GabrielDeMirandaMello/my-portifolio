@@ -75,7 +75,7 @@ function Home() {
 
                                     <div className='flex flex-wrap w-full' />
 
-                                    <section className='flex flex-wrap gap-8 pl-3 w-full h-96 overflow-y-auto rounded-2xl scroll-smooth'>
+                                    <section className='noScroll flex flex-wrap gap-8 pl-3 w-full h-96 overflow-y-auto rounded-2xl'>
                                         <SpeedDial
                                             img={JavaImage}
                                             name="Java 11 e 17"
