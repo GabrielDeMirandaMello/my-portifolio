@@ -141,36 +141,6 @@ function Projects() {
                                         04
                                     </p>
                                 </div>
-                                <div 
-                                onClick={() => {window.location.href = 'https://github.com/GabrielDeMirandaMello/book-catalogy'}}
-                                class="service-card rounded-xl w-4/4 shadow-xl cursor-pointer snap-start shrink-0 py-8 px-6 bg-white flex flex-col items-start gap-3 transition-all duration-300 group hover:bg-blue-500">
-                                    <svg
-                                        stroke-linejoin="round"
-                                        stroke-linecap="round"
-                                        stroke-width="2"
-                                        stroke="#000000"
-                                        fill="none"
-                                        viewBox="0 0 24 24"
-                                        class="text-5xl h-12 w-12 stroke-black group-hover:stroke-white"
-
-                                    >
-                                        <rect ry="2" rx="2" height="14" width="20" y="3" x="2"></rect>
-                                        <line y2="21" x2="16" y1="21" x1="8"></line>
-                                        <line y2="21" x2="12" y1="17" x1="12"></line>
-                                    </svg>
-
-                                    <p class="font-bold text-2xl group-hover:text-white text-black">
-                                        Teste Book Catalogy
-                                    </p>
-                                    <p class="text-black group-hover:text-white text-sm font-bold">
-                                        Este projeto foi feito para um teste tecnico em desenvolvimento back end, Realizado com java, spring boot, testes unitários e utilizando clean architecture.
-                                    </p>
-                                    <p
-                                        class="text-5xl text-black group-hover:text-white font-bold self-end"
-                                    >
-                                        04
-                                    </p>
-                                </div>
                             </div>
                         </div>
                     </div>
