@@ -1,11 +1,12 @@
 "use client"
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { HiMenu, HiOutlineX } from "react-icons/hi";
 import Image from "next/image";
 import Button from "@/components/button"
 import Card from "@/components/card"
 import Contact from "@/components/contact";
 import CardConhecimento from "@/components/card-conhecimento";
+import { motion } from "motion/react"
 
 export default function Home() {
 
@@ -100,8 +101,9 @@ export default function Home() {
           <section id="Inicio" className="w-screen h-screen flex flex-col justify-center items-center bg-black">
             <div>
               <p>Olá, eu sou</p>
-              <h1 className="text-3xl text-[#0EA2F9] py-4">Gabriel de Miranda</h1>
-              <p>{`Desenvolvedor Full Stack`}</p>
+              <motion.h1 initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1 }} className="text-3xl text-[#0EA2F9] py-4">Gabriel de Miranda</motion.h1>
+              <p className="mb-10">{`Desenvolvedor Full Stack`}</p>
+              <Button text={`Acessar o LinkedIn`} url={`https://www.linkedin.com/in/gabriel-de-miranda-mello-652346118/`} />
             </div>
             <div className="pt-30">
               <Image src="/bro.png" alt='Imagen de um notebook' width={200} height={100} />
@@ -109,19 +111,56 @@ export default function Home() {
           </section>
           <section id="Sobremim" className="w-screen h-screen">
             <div className="h-full flex flex-col justify-around items-center px-10">
-              <h1 className="text-3xl text-[#0EA2F9] self-start">Sobre mim</h1>
+              <motion.h1 initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ ease: "easeOut", duration: 1 }}
+              className="text-3xl text-[#0EA2F9] self-start">Sobre mim</motion.h1>
               <p>Sou um desenvolvedor back-end júnior apaixonado por resolver problemas e criar soluções eficientes. Com formação técnica em Análise e Desenvolvivendo de Sistemas e experiência prática em projetos, estou sempre buscando oportunidades para aprimorar minhas habilidades e contribuir para o sucesso de equipes de desenvolvimento.</p>
               <p>Adoro enfrentar desafios técnicos e aprender novas tecnologias. Estou constantemente explorando novas ferramentas e técnicas para melhorar meu código e minha eficiência como desenvolvedor.</p>
-              <Button text={`Acessar o LinkedIn`} url={`https://www.linkedin.com/in/gabriel-de-miranda-mello-652346118/`}></Button>
+              <Button text={`Baixar currículo`} url={`https://drive.usercontent.google.com/u/0/uc?id=1vZGB7_9f4v7kufSlqTwogy_lRDZ6oRJY&export=download`}></Button>
             </div>
           </section>
           <section id="Projetos" className="w-screen h-fit">
             <div className="flex flex-col gap-10">
               <h1 className="mx-10 text-3xl text-[#0EA2F9] font-extrabold">Projetos</h1>
-              <Card img={"/story-travels.png"} alt={"Print do site story-travels.vercell.app"} tittle={"History Travels"} descripstion={"Este projeto foi feito com o intuito de aprimorar meus conhecimentos, consiste em uma rede social para pessoas que gostam de viajar e compartilhar locais legais."} tecnologies={"Java, Spring e React.js"} />
-              <Card img={"/story-travels.png"} alt={"Print do site story-travels.vercell.app"} tittle={"History Travels"} descripstion={"Este projeto foi feito com o intuito de aprimorar meus conhecimentos, consiste em uma rede social para pessoas que gostam de viajar e compartilhar locais legais."} tecnologies={"Java, Spring e React.js"} />
-              <Card img={"/story-travels.png"} alt={"Print do site story-travels.vercell.app"} tittle={"History Travels"} descripstion={"Este projeto foi feito com o intuito de aprimorar meus conhecimentos, consiste em uma rede social para pessoas que gostam de viajar e compartilhar locais legais."} tecnologies={"Java, Spring e React.js"} />
-              <Card img={"/story-travels.png"} alt={"Print do site story-travels.vercell.app"} tittle={"History Travels"} descripstion={"Este projeto foi feito com o intuito de aprimorar meus conhecimentos, consiste em uma rede social para pessoas que gostam de viajar e compartilhar locais legais."} tecnologies={"Java, Spring e React.js"} />
+              <Card 
+                img={"/images-projetos/print-adega-black-jack.png"} 
+                alt={"Print do site black-jack-mp.vercell.app"} 
+                tittle={"Adega Black Jack"} 
+                descripstion={"Este projeto front end foi feito para uma adega com o intuito de aprimorar a expériencia com o cliente e deixar a adega com uma cara mais profissional"} 
+                tecnologies={"React.js, TailwindCSS e TypeScript"} 
+                url={"https://black-jack-mp.vercel.app"}
+              />
+              <Card 
+                img={"/images-projetos/projetos-back-end.png"} 
+                alt={"Print de codigo no Virtual studio code"} 
+                tittle={"Saga Orchestrator Microservice"} 
+                descripstion={"Um sistema com 5 microserviços para gerir todo o ciclo de um pedido até a confirmação do pagamento, foi utilizado o padrão saga com o kafka para troca de mensagens entre os serviços."} 
+                tecnologies={"Java 17, Spring Boot 3, Apache Kafka, PostgreSQL, MongoDB, Docker, Docker-Compose e Redpanda Console."} 
+                url={"https://github.com/GabrielDeMirandaMello/microservice-saga-orchestrator?tab=readme-ov-file"}
+              />
+              <Card 
+                img={"/images-projetos/projetos-back-end.png"} 
+                alt={"Print de codigo no Virtual studio code"} 
+                tittle={"Book Catalogy"} 
+                descripstion={"Desenvolvimento de uma API para gerenciar um sistema de catálogo de livros em uma biblioteca, criado para um teste técnico aplicando a uma vaga de desenvolvedor back end junior."} 
+                tecnologies={"Java 17, Spring Boot 3, Mockito, JUnit5 e Swagger"} 
+                url={""}
+              />
+              <Card 
+                img={"/images-projetos/projetos-back-end.png"} 
+                alt={"Print do site story-travels.vercell.app"} 
+                tittle={"History Travels"} 
+                descripstion={"Este projeto foi feito com o intuito de aprimorar meus conhecimentos, consiste em uma rede social para pessoas que gostam de viajar e compartilhar locais legais."} 
+                tecnologies={"Java, Spring e React.js"} 
+                url={""}
+              />
+              <Card 
+                img={"/images-projetos/p-i-.png"} 
+                alt={"imagem de uma bagagem amarela"} 
+                tittle={"Viagens App"} 
+                descripstion={"Este projeto foi feito com o intuito de formalizar meus conhecimentos adquiridos durante o 1° semestre da faculdade de Analise e Desenvolvimento de Sistemas, consiste em um mural onde todos que postarem poderam ver suas historias sem precisar fazer login na plataforma, juntamento com um dashboard com pontos importantes sobre as sua historias e a de toda a plataforma."} 
+                tecnologies={"HTML5, CSS3, JavaScript, Node.js e MySQL"} 
+                url={"https://github.com/GabrielDeMirandaMello/viagens-app"}
+              />
             </div>
           </section>
           <section id="Conhecimentos" className="w-screen h-screen mt-10">
