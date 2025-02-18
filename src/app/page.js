@@ -14,7 +14,7 @@ export default function Home() {
 
   return (
     <>
-      <div className="w-screen h-fit flex flex-col">
+      <div className="w-screen h-fit flex flex-col overflow-hidden overflow-y-scroll">
         <header className="fixed top-0 left-0 w-screen h-fit p-5 flex justify-around bg-black border-b-[#0Ea2f9] border-b-2 lg:p-0 md:border-none">
           <nav className="flex flex-col justify-between lg:flex-row lg:justify-center lg:items-center lg:gap-50 lg:mt-5">
             <div className="mx-5 text-[#0EA2F9] font-extrabold lg:text-[20px]">
@@ -125,21 +125,21 @@ export default function Home() {
               <Button text={`Acessar o LinkedIn`} url={`https://www.linkedin.com/in/gabriel-de-miranda-mello-652346118/`} />
             </div>
             <div className="pt-10 lg:pt-30">
-              <Image src="/bro.svg" alt='Imagen de um notebook' width={200} height={100} className="lg:w-80 lg:h-auto drop-shadow-[0_0_200px_rgba(14,162,249,1)]"/>
+              <Image src="/bro.svg" alt='Imagen de um notebook' width={200} height={100} className="lg:w-80 lg:h-auto drop-shadow-[0_0_200px_rgba(14,162,249,1)]" />
             </div>
           </section>
-          <section id="Sobremim" className="w-screen h-screen lg:w-screen lg:px-100">
-            <div className="h-full flex flex-col justify-around items-center px-10">
+          <section id="Sobremim" className="w-screen h-screen lg:w-screen lg:px-100 lg:h-fit lg:my-20">
+            <div className="h-full flex flex-col justify-around items-center px-10 lg:justify-center lg:gap-10 lg:items-start">
               <motion.h1 initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ ease: "easeOut", duration: 1 }}
                 className="text-3xl text-[#0EA2F9] self-start">Sobre mim</motion.h1>
               <p>Sou um desenvolvedor back-end júnior apaixonado por resolver problemas e criar soluções eficientes. Com formação técnica em Análise e Desenvolvivendo de Sistemas e experiência prática em projetos, estou sempre buscando oportunidades para aprimorar minhas habilidades e contribuir para o sucesso de equipes de desenvolvimento.</p>
-              <p>Adoro enfrentar desafios técnicos e aprender novas tecnologias. Estou constantemente explorando novas ferramentas e técnicas para melhorar meu código e minha eficiência como desenvolvedor.</p>
+              <p>Adoro enfrentar desafios técnicos e aprender novas tecnologias. Estou constantemente explorando novas ferramentas e técnicas para melhorar meu código e minha eficiência como solucionador de problemas.</p>
               <Button text={`Baixar currículo`} url={`https://drive.usercontent.google.com/u/0/uc?id=1vZGB7_9f4v7kufSlqTwogy_lRDZ6oRJY&export=download`}></Button>
             </div>
           </section>
           <section id="Projetos" className="w-screen h-fit lg:w-screen lg:px-100">
-            <div className="flex flex-col gap-10">
-              <h1 className="mx-10 text-3xl text-[#0EA2F9] font-extrabold">Projetos</h1>
+            <h1 className="m-10 text-3xl text-[#0EA2F9] font-extrabold">Projetos</h1>
+            <div className="flex flex-col gap-10 lg:grid lg:grid-cols-2">
               <Card
                 img={"/images-projetos/print-adega-black-jack.png"}
                 alt={"Print do site black-jack-mp.vercell.app"}
@@ -184,7 +184,7 @@ export default function Home() {
           </section>
           <section id="Conhecimentos" className="w-screen h-screen mt-10 lg:w-screen lg:px-100">
             <h1 className="mx-10 text-3xl text-[#0EA2F9] font-extrabold self-start">Conhecimentos</h1>
-            <div className="h-4/5 overflow-hidden overflow-y-scroll flex flex-col items-center gap-10 mt-10">
+            <div className="h-4/5 overflow-hidden overflow-y-scroll flex flex-col items-center gap-10 mt-10 lg:grid lg:grid-cols-4">
               <CardConhecimento image={"/conhecimentos-icons/java-svgrepo-com.svg"} alt={"Imagen de um café"} technology={"Java"} />
               <CardConhecimento image={"/conhecimentos-icons/spring-boot-svgrepo-com.svg"} alt={"Imagen da logo do spring boot"} technology={"Spring Boot"} />
               <CardConhecimento image={"/conhecimentos-icons/javascript-155-svgrepo-com.svg"} alt={"Imagen da logo do JavaScript"} technology={"JavaScript"} />
@@ -200,8 +200,8 @@ export default function Home() {
             </div>
           </section>
           <section id="Contato" className="w-screen h-fit mt-10 pt-10 border-t-2 border-[#0EA2F9] lg:w-screen lg:px-100">
-            <div className="flex flex-col justify-center items-center gap-5">
-              <Contact icon={"/user-svgrepo-com.svg"} title={"Nome"} description={"Gabriel de Miranda Mello"} />
+            <div className="flex flex-col justify-center items-center gap-5 lg:flex-row lg:justify-evenly">
+              <Contact  icon={"/user-svgrepo-com.svg"} title={"Nome"} description={"Gabriel de Miranda"} />
               <Contact icon={"/mail-svgrepo-com.svg"} title={"E-mail"} description={"Gabrielmirandamello9@gmail.com"} />
               <Contact icon={"/maps-svgrepo-com.svg"} title={"Endereço"} description={"São Paulo - Brasil"} />
               <Contact icon={"/whatsapp-svgrepo-com.svg"} title={"WhatsApp"} description={"+55 11 97613-9421"} />
