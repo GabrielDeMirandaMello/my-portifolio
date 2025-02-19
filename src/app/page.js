@@ -1,5 +1,5 @@
 "use client"
-import { useEffect, useRef, useState } from "react";
+import { useState } from "react";
 import { HiMenu, HiOutlineX } from "react-icons/hi";
 import Image from "next/image";
 import Button from "@/components/button"
@@ -15,8 +15,8 @@ export default function Home() {
   return (
     <>
       <div className="w-screen h-fit flex flex-col overflow-hidden overflow-y-scroll">
-        <header className="fixed top-0 left-0 w-screen h-fit p-5 flex justify-around bg-black border-b-[#0Ea2f9] border-b-2 lg:p-0 md:border-none">
-          <nav className="flex flex-col justify-between lg:flex-row lg:justify-center lg:items-center lg:gap-50 lg:mt-5">
+        <header className="fixed top-0 z-1 left-0 w-screen h-fit p-5 flex justify-around bg-black border-b-[#0Ea2f9] border-b-2 lg:p-0 lg:border-b-[1px]">
+          <nav className="flex flex-col justify-between lg:flex-row lg:justify-center lg:items-center lg:gap-50 lg:py-5 ">
             <div className="mx-5 text-[#0EA2F9] font-extrabold lg:text-[20px]">
               Gabriel de Miranda
             </div>
@@ -116,7 +116,7 @@ export default function Home() {
           </div>
 
         </header>
-        <main className="w-screen h-screen">
+        <main className="relative z-0 w-screen h-screen">
           <section id="Inicio" className="w-screen lg:w-screen lg:gap-80 lg:px-100 h-screen flex flex-col lg:flex-row justify-center items-center bg-black">
             <div>
               <p>Olá, eu sou</p>
@@ -132,8 +132,8 @@ export default function Home() {
             <div className="h-full flex flex-col justify-around items-center px-10 lg:justify-center lg:gap-10 lg:items-start">
               <motion.h1 initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ ease: "easeOut", duration: 1 }}
                 className="text-3xl text-[#0EA2F9] self-start">Sobre mim</motion.h1>
-              <p>Sou um desenvolvedor back-end júnior apaixonado por resolver problemas e criar soluções eficientes. Com formação técnica em Análise e Desenvolvivendo de Sistemas e experiência prática em projetos, estou sempre buscando oportunidades para aprimorar minhas habilidades e contribuir para o sucesso de equipes de desenvolvimento.</p>
-              <p>Adoro enfrentar desafios técnicos e aprender novas tecnologias. Estou constantemente explorando novas ferramentas e técnicas para melhorar meu código e minha eficiência como solucionador de problemas.</p>
+              <p>Sou um desenvolvedor Full Stack apaixonado por resolver problemas e criar soluções eficientes. Com formação técnica em Análise e Desenvolvivendo de Sistemas e experiência prática em projetos, estou sempre buscando oportunidades para aprimorar minhas habilidades e contribuir para o sucesso das equipes de desenvolvimento.</p>
+              <p>Adoro enfrentar desafios técnicos e aprender novas tecnologias. Estou constantemente explorando novas ferramentas e técnicas para melhorar meu código e minha eficiência em solucionador de problemas.</p>
               <Button text={`Baixar currículo`} url={`https://drive.usercontent.google.com/u/0/uc?id=1vZGB7_9f4v7kufSlqTwogy_lRDZ6oRJY&export=download`}></Button>
             </div>
           </section>

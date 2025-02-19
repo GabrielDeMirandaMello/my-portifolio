@@ -11,6 +11,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="pt-br">
+      <head>
+        <link rel="shortcut icon" href="/g.svg" />
+      </head>
       <body
         className={inter.className}
       >
