@@ -1,5 +1,5 @@
 "use client"
-import { useEffect, useRef, useState } from "react";
+import { useState } from "react";
 import { HiMenu, HiOutlineX } from "react-icons/hi";
 import Image from "next/image";
 import Button from "@/components/button"
@@ -132,7 +132,7 @@ export default function Home() {
             <div className="h-full flex flex-col justify-around items-center px-10 lg:justify-center lg:gap-10 lg:items-start">
               <motion.h1 initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ ease: "easeOut", duration: 1 }}
                 className="text-3xl text-[#0EA2F9] self-start">Sobre mim</motion.h1>
-              <p>Sou um desenvolvedor Full Stack Júnior apaixonado por resolver problemas e criar soluções eficientes. Com formação técnica em Análise e Desenvolvivendo de Sistemas e experiência prática em projetos, estou sempre buscando oportunidades para aprimorar minhas habilidades e contribuir para o sucesso das equipes de desenvolvimento.</p>
+              <p>Sou um desenvolvedor Full Stack apaixonado por resolver problemas e criar soluções eficientes. Com formação técnica em Análise e Desenvolvivendo de Sistemas e experiência prática em projetos, estou sempre buscando oportunidades para aprimorar minhas habilidades e contribuir para o sucesso das equipes de desenvolvimento.</p>
               <p>Adoro enfrentar desafios técnicos e aprender novas tecnologias. Estou constantemente explorando novas ferramentas e técnicas para melhorar meu código e minha eficiência em solucionador de problemas.</p>
               <Button text={`Baixar currículo`} url={`https://drive.usercontent.google.com/u/0/uc?id=1vZGB7_9f4v7kufSlqTwogy_lRDZ6oRJY&export=download`}></Button>
             </div>
